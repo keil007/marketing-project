@@ -1,0 +1,196 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "3a26448b711645ba1abfc86c1a6e2f30",
+      "css": "coffee",
+      "code": 61684,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8f73806c205d38d9412c340f93ed0c7a",
+      "css": "coffee-1",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "90e0aff5c929e444038355746a952aaf",
+      "css": "shopping-basket",
+      "code": 62097,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e0d15ef5945000f5f264acc35494002f",
+      "css": "basket",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "5d27926667773d186de09fda4312af27",
+      "css": "shop",
+      "code": 59394,
+      "src": "linecons"
+    },
+    {
+      "uid": "266d5d9adf15a61800477a5acf9a4462",
+      "css": "chart-bar",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "554ee96588a6c9ee632624cd051fe6fc",
+      "css": "chart-pie",
+      "code": 61952,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ea2d9a8c51ca42b38ef0d2a07f16d9a7",
+      "css": "chart-line",
+      "code": 61953,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1145676a91138011729fa2909997af66",
+      "css": "linkedin-squared",
+      "code": 62220,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a9862b9d5197886c1ad693ecd7120b31",
+      "css": "youtube",
+      "code": 61799,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "x8m4z7b33cv1h2s784tjlam56uq40wtd",
+      "css": "users",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "bczb7qup4axmc490xmuuv8qdhcnbgeyf",
+      "css": "user",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "8ed4884bf9b840729eef8f0bbd2b1dbb",
+      "css": "user-outline",
+      "code": 59398,
+      "src": "typicons"
+    },
+    {
+      "uid": "a1d4b614f12cfe2b5aa66313ad88c90c",
+      "css": "users-outline",
+      "code": 59399,
+      "src": "typicons"
+    },
+    {
+      "uid": "3b00728aa97ad1a2581d414bd9d650bc",
+      "css": "heart",
+      "code": 59400,
+      "src": "typicons"
+    },
+    {
+      "uid": "hi76m8qggwn5lbl286oeqp64q0n8kusy",
+      "css": "heart-filled",
+      "code": 59401,
+      "src": "typicons"
+    },
+    {
+      "uid": "bcdc294bb787b15203b82f2be8096548",
+      "css": "star",
+      "code": 59402,
+      "src": "typicons"
+    },
+    {
+      "uid": "vyuzsm6wijlfwtjo4ifkoblfmsepk6g8",
+      "css": "star-filled",
+      "code": 59403,
+      "src": "typicons"
+    },
+    {
+      "uid": "tau7t0t38662eqxrb80ozeiase5em2x9",
+      "css": "thumbs-up",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "ani12ucvy2plqmykysnk4zd9i24cmxqp",
+      "css": "thumbs-down",
+      "code": 59405,
+      "src": "typicons"
+    },
+    {
+      "uid": "eh1m4shhgsndy7pmdzx3ynrakadhozgr",
+      "css": "clock",
+      "code": 59406,
+      "src": "typicons"
+    },
+    {
+      "uid": "12d16dda691bda304e3b57d7bc0de5a9",
+      "css": "lightbulb",
+      "code": 59407,
+      "src": "typicons"
+    },
+    {
+      "uid": "a19527dd18f0e45e597e8a2622604d14",
+      "css": "wifi",
+      "code": 59408,
+      "src": "typicons"
+    },
+    {
+      "uid": "igynut9bozd2s1mxnmkeeut1qou984gc",
+      "css": "globe",
+      "code": 59409,
+      "src": "typicons"
+    },
+    {
+      "uid": "e2aba9565be51ca70224c07282afbba6",
+      "css": "cursor",
+      "code": 59410,
+      "src": "iconic"
+    },
+    {
+      "uid": "in76hg99crrkpcbz2rjnmgbiw74s72y0",
+      "css": "ok",
+      "code": 59411,
+      "src": "modernpics"
+    },
+    {
+      "uid": "rrhco7mfj6ro9yzhe4a1rbln9flw47re",
+      "css": "cancel",
+      "code": 59412,
+      "src": "modernpics"
+    },
+    {
+      "uid": "c0a07aca383ff2a164a4d691fa46e35c",
+      "css": "left-open",
+      "code": 59413,
+      "src": "elusive"
+    },
+    {
+      "uid": "dc4a03854ef986d64565143bea4241aa",
+      "css": "right-open",
+      "code": 59414,
+      "src": "elusive"
+    }
+  ]
+}

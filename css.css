@@ -1,0 +1,388 @@
+body
+{
+    margin:0;
+    font-family: 'DM Mono', monospace;
+    overflow-x: hidden;
+}
+
+/* font-family: 'DM Mono', monospace;
+font-family: 'Amatic SC', cursive;
+font-family: 'Neuton', serif; */
+
+#content
+{
+    background-image: url("img/triangular.png");
+    width:100vw;
+    height:1570vh;
+    position:relative;
+}
+
+.normal
+{
+    width:100vw;
+    height:110vh;
+    background-size: 100vw;
+}
+
+#one
+{
+    background-image:url("img/tlo3.jpg");
+}
+
+#overlay
+{
+    position: absolute;
+    width:25vw;
+    height:calc(110vh - 40px);
+    background-color:#d47e19;
+    opacity: 0.95;
+    font-size:22px;
+    text-align: center;
+    padding:20px;
+}
+
+#gif1
+{
+    position: absolute;
+    left:70vw;
+    opacity: 0.8;
+}
+
+/*  rgba(203, 156, 25, 0.65)  */
+
+#two
+{
+    background-color: #e1c076;
+    opacity:1;
+    text-align: justify;
+}
+
+#twotext
+{
+    width:50vw;
+    padding:50px 10px 0px 70px;
+    letter-spacing:3px;
+    line-height: 55px;
+    font-size:28px;
+    text-indent: 25px;
+}
+
+#three
+{
+    background-image: url("img/tlo2.jpg");
+    text-align:center;
+    position: relative;
+}
+
+#threetext
+{
+    position: absolute;
+    top:30vh;
+    width:50vw;
+    left:25vw;
+    height:40vh;
+    background-color: #ffffff;
+    border: 2px brown dotted; 
+}
+
+#three p
+{
+    font-size:26px;
+    padding-top:10px;
+    color:#815e11;
+}
+
+#four
+{
+    background-image: url("img/budynek.jpg");
+    color:black;
+}
+
+#fourtext
+{
+    position: absolute;
+    left:45vw;
+    width:50vw;
+    padding-top:110px;
+    padding-right:20px;
+    letter-spacing:3px;
+    line-height: 60px;
+    font-family: 'Amatic SC', cursive;
+    font-size:38px;
+    transition: all 0.65s ease-in-out;
+    text-align:center;
+}
+
+#fourtext:hover
+{
+    font-size:40px;
+    padding-right:-15px;
+}
+
+#five
+{
+    -webkit-animation: colorPulse 6s infinite alternate;
+}
+
+@-webkit-keyframes colorPulse {
+    0% {background-color: #e1c076;}
+    25% {background-color: white;}
+    50% {background-color: #e1c076;}
+    75% {background-color: black;}
+  100% {background-color: #e1c076;}
+}
+
+.item img
+{
+    width:100vw;
+    height:110vh !important;
+}
+
+#seven
+{
+    background-color: white;
+    text-align:center;
+}
+
+#seven img
+{
+    display:inline-block;
+    width:45vw;
+    margin:120px 30px 0px 30px;
+    height:65vh;
+}
+
+#eight
+{
+    width:100vw;
+    height:320vh;
+    background-size: 100vw;
+    background-color: #111111;
+    position:relative;
+    color:#dddddd;
+    font-size:20px;
+    line-height: 31px;
+    font-family: 'DM Mono', monospace;
+}
+
+#swot
+{
+    position: absolute;
+    left:45vw;
+    top:20vh;
+    width:10vw;
+    text-align:center;
+    font-size:40px;
+    line-height: 30px;
+    height:10vh;
+}
+
+#swot p
+{
+    color:#e1c076;
+}
+
+.kafelek
+{
+    position: absolute;
+    width:5vw;
+    height:5vw;
+    font-size:55px;
+    text-align:center;
+    color:#e1c076;
+}
+
+.kropka
+{
+    position: absolute;
+    height:12px;
+    width:12px;
+    background-color:#ffffff;
+    border-radius:50%;
+    left:50vw;
+    opacity: 0;
+    transition:all 2s ease;
+}
+
+#kaf1
+{
+    top:50vh;
+    left:20vw;
+}
+
+#kaf2
+{
+    top:110vh;
+    left:70vw;
+}
+
+#kaf3
+{
+    top:170vh;
+    left:20vw;
+}
+
+#kaf4
+{
+    top:230vh;
+    left:70vw;
+}
+
+.swottext
+{
+    position: absolute;
+    width:36vw;
+    height:60vh;
+    letter-spacing: 2px;
+}
+
+#mocne
+{
+    top:calc(50vh + 6vw); /* tu dałem +1 odsstępu od kwadratu */
+    left:7vw;
+}
+
+#slabe
+{
+    top:calc(110vh + 6vw); /* tu dałem +1 odsstępu od kwadratu */
+    left:57vw;
+}
+
+#szanse
+{
+    top:calc(170vh + 6vw); /* tu dałem +1 odsstępu od kwadratu */
+    left:7vw;
+}
+
+#zagrozenia
+{
+    top:calc(230vh + 6vw); /* tu dałem +1 odsstępu od kwadratu */
+    left:57vw;
+}
+
+#nine
+{
+    width:100vw;
+    height:480vh;
+    background-color:#e1c076;
+    background-size: 100vw;
+    position: relative;
+    padding-top: 100px;
+}
+
+#ninetop
+{
+    font-size:50px;
+    letter-spacing: 6px;
+    font-family: 'DM Mono', monospace;
+    width:30vw;
+    position: absolute;
+    left:53vw;
+}
+
+.wciecie
+{
+    position: absolute;
+    width:50vw;
+    height:140vh;
+    top:80vh;
+    background-color: #fff;
+    text-align: center;
+    padding: 0px 130px 0px 130px;
+    color:#444444;
+}
+
+.textnine
+{
+    margin-top:40px;
+}
+
+.textnine h1
+{
+    font-size:40px;
+    margin-top:60px;
+    font-family: 'DM Mono', monospace;
+}
+
+.textnine p
+{
+    font-size:25px;
+}
+
+#wciecie2
+{
+    left:50vw;
+    top:220vh;
+}
+
+#wciecie3
+{
+    top:360vh;
+    height:120vh;
+}
+
+#ten
+{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    background-color:#fff;
+    width:100vw;
+    height:120vh;
+    color:#222222;
+}
+
+#ten h1
+{
+    position: fixed;
+    font-family: 'Neuton', serif;
+}
+
+#ten a
+{
+    position: fixed;
+    font-size: 15px;
+    text-align: center;
+}
+
+.circle
+{
+    position: fixed;
+    background-color: #e1c076;
+    border-radius: 50%;
+    border: 2px dashed #222222;
+    width:10vw;
+    height:10vw;
+}
+
+.circle img
+{
+    border-radius: 50%;
+    position: fixed;
+    top:20vh;
+    left:9vw;
+    width:10vw;
+    height:10vw;
+    z-index:5;
+}
+
+.circle span
+{
+    font-size:100px;
+    position: fixed;
+}
+/*
+.line
+{
+    width:0.3vw;
+    height:100vh;
+    position: fixed;
+    background-color: #e1c076;
+}*/
+
+#eleven
+{
+    margin-top:120vh;
+    background-color:purple;
+}
