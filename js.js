@@ -33,3 +33,7 @@ function znikanie()
                 setTimeout(znikanie,750);
         }
 }
+
+$("#eleven").mouseover(function(){
+        $("#eleventext").fadeIn(1500);
+      });
