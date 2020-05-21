@@ -337,6 +337,7 @@ font-family: 'Neuton', serif; */
 {
     position: fixed;
     font-family: 'Neuton', serif;
+    text-shadow:5px 5px 5px #e1c076;
 }
 
 #ten a
@@ -398,9 +399,72 @@ font-family: 'Neuton', serif; */
     display: none;
 }
 
+    /*color:#7697e1; ************************************************************************************************/
+
 #twelve
 {
-    background-color: lightblue;
+    background-image: url("img/twelve.png");
+    background-size: 75vw;
+    background-position: center;
+    position: relative;
 }
 
-    /*color:#7697e1;*/
+.goal
+{
+    /*background-color: lightgreen;*/
+    width:35vw;
+    height:7vw;
+    position: absolute;
+    font-family: 'DM Mono', monospace;
+    font-size:16px;
+    text-align:center;
+    color:#000;
+}
+
+#goal1
+{
+    top:10vh;
+    left:10vw;
+}
+
+#goal2
+{
+    top:10vh;
+    left:60vw;
+}
+
+#goal3
+{
+    top:30vh;
+    left:2vw;
+}
+
+#goal4
+{
+    top:30vh;
+    left:63vw;
+}
+
+#goal5
+{
+    top:67vh;
+    left:2vw;
+}
+
+#goal6
+{
+    top:67vh;
+    left:63vw;
+}
+
+#goal7
+{
+    top:93vh;
+    left:10vw;
+}
+
+#goal8
+{
+    top:93vh;
+    left:60vw;
+}
