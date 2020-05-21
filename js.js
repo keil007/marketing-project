@@ -35,5 +35,5 @@ function znikanie()
 }
 
 $("#eleven").mouseover(function(){
-        $("#eleventext").fadeIn(1500);
+        $("#eleventext").fadeIn(1200);
       });

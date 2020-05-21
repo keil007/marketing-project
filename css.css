@@ -390,11 +390,17 @@ font-family: 'Neuton', serif; */
     text-align:center;
     font-family: 'Amatic SC', cursive;
     padding:27vh 10vw 27vh;
+    text-shadow:8px 8px 15px #222;
 }
 
 #eleven span
 {
     display: none;
+}
+
+#twelve
+{
+    background-color: lightblue;
 }
 
     /*color:#7697e1;*/
