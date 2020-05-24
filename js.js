@@ -70,3 +70,36 @@ function znikanie()
 $("#eleven").mouseover(function(){
         $("#eleventext").fadeIn(1200);
       });
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Group', 'Percantage'],
+          ['Nothing',     50],
+          ['Dorośli (powyżej 25 lat)',  50],
+          ['Nastolatkowie (13-17 lat)',     15],
+          ['Młodzież/ studenci (18-25 lat)',      35],
+          ['Emptiness', 50]
+        ]);
+
+        var options = {
+          pieSliceText: 'none',
+          backgroundColor: 'transparent',
+          pieSliceBorderColor: 'transparent',
+          tooltip: { trigger: 'none' },
+          legend: 'none',
+          slices: {
+                0: { color: 'transparent' },
+                1: { color: '#333' },
+                2: { color: '#7697e1' },
+                3: { color: '#fff' },
+                4: { color: 'transparent' }}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }

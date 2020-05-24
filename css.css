@@ -462,5 +462,79 @@ font-family: 'Neuton', serif; */
 #thirteen
 {
     background-image:linear-gradient( #e1c076,#222);
+    position: relative;
+    height:120vh;
     /* klienci, zaraz niżej cele */
+}
+
+#piechart
+{
+    position: absolute;
+    left:17vw;
+    top:-40vh;
+    z-index:3;
+}
+
+#thirteen-left
+{
+    position: absolute;
+    height:120vh;
+    width:33vw;
+}
+
+#thirteen-middle
+{
+    height:120vh;
+    left:33vw;
+    width:33vw;
+    position: absolute;
+}
+
+#thirteen-right
+{
+    height:120vh;
+    left:66vw;
+    width:33vw;
+    position: absolute;
+}
+
+
+
+
+
+
+#fourteen
+{
+    background-color: #222;
+    position: relative;
+    height:200vh;
+}
+
+#fourteen-head
+{
+    position: absolute;
+    width:40vw;
+    height:15vh;
+    background-color: red;
+}
+
+.goal
+{
+    position: absolute;
+    width:30vw;
+    height:20vh;
+    background-color: #555;
+    border:3px solid green;
+}
+
+.check
+{
+    position: absolute;
+    width:10vw;
+    height:20vh;
+    background-color: #333;
+    border:3px solid green;
+    color:green;
+    font-size:100px;
+    text-align:center;
 }
