@@ -67,7 +67,6 @@ function znikanie()
         }
 }
 
-
 $("#eleven").mouseover(function(){
         $("#eleventext").fadeIn(1200);
       });
