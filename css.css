@@ -300,6 +300,12 @@ font-family: 'Neuton', serif; */
     color:#444444;
 }
 
+#wciecie2
+{
+    left:50vw;
+    top:220vh;
+}
+
 .textnine
 {
     margin-top:40px;
@@ -317,11 +323,47 @@ font-family: 'Neuton', serif; */
     font-size:25px;
 }
 
-#wciecie2
+.turn
 {
-    left:50vw;
-    top:220vh;
+    perspective: 2000px;
+    position: relative;
 }
+
+
+.turn::before,
+.turn::after
+{
+    content:"";
+    top:-9.5vh;
+    width: 50vw;
+    left:-9.5vw;
+    height:33vh;
+    box-sizing: border-box;
+    transition: 0.6s transform linear;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.turn:hover::after
+{
+    transform:rotateY(180deg);
+}
+
+.turn::after
+{
+}
+
+.turn::before
+{
+    background-color: royalblue;
+    transform:rotateY(180deg);
+}
+
+.turn:hover::before
+{
+    transform:rotateY(360deg);
+}
+
 
 #wciecie3
 {
