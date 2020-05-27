@@ -79,8 +79,8 @@ $("#eleven").mouseover(function(){
         var data = google.visualization.arrayToDataTable([
           ['Group', 'Percantage'],
           ['Nothing',     50],
-          ['Dorośli (powyżej 25 lat)',  50],
           ['Nastolatkowie (13-17 lat)',     15],
+          ['Dorośli (powyżej 25 lat)',  50],
           ['Młodzież/ studenci (18-25 lat)',      35],
           ['Emptiness', 50]
         ]);
