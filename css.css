@@ -349,12 +349,6 @@ font-family: 'Neuton', serif; */
 {
     transform:rotateY(180deg);
 }
-
-.turn::after
-{
-    background-color: lawngreen;
-}
-
 .turn::before
 {
     background-color: royalblue;
@@ -368,28 +362,39 @@ font-family: 'Neuton', serif; */
 
 #turn1
 {
-    height:40vh;
+    height:36vh;
 }
 
-#turn2
+#turn1::after
 {
-    height:25vh;
+    background-image:url("img/06.png");
 }
 
-#turn3
+#turn2::after
 {
-    height:25vh;
+    background-image:url("img/07.png");
 }
 
-#turn4
+#turn3::after
 {
-    height:25vh;
+    background-image:url("img/08.png");
 }
 
-#turn5
+#turn4::after
 {
-    height:25vh;
+    background-image:url("img/09.png");
 }
+
+#turn5::after
+{
+    background-image:url("img/10.png");
+}
+
+#turn2,#turn3,#turn4,#turn5
+{
+    height:26vh;
+}
+
 
 #wciecie3
 {
