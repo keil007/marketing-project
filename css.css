@@ -296,8 +296,27 @@ font-family: 'Neuton', serif; */
     top:80vh;
     background-color: #fff;
     text-align: center;
-    padding: 0px 130px 0px 130px;
     color:#444444;
+}
+
+.ninehover
+{
+    width:50vw;
+    position: absolute;
+    left:0;
+}
+
+.nineshow
+{
+    position: absolute;
+    font-size:48px;
+    letter-spacing: 8px;
+    font-family: 'Amatic SC', cursive;
+    left:50vw;
+    transition: 0.6s all ease-out;
+    opacity:0;
+    color:white;
+    text-shadow:5px 5px 5px #222;
 }
 
 #wciecie2
@@ -323,6 +342,7 @@ font-family: 'Neuton', serif; */
 .textnine p
 {
     font-size:25px;
+    padding: 0px 130px 0px 130px;
 }
 
 .turn

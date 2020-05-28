@@ -67,6 +67,88 @@ function znikanie()
         }
 }
 
+var nine0 = document.getElementsByClassName("ninehover")[0];
+nine0.addEventListener("mouseover", ShowMe1);
+nine0.addEventListener("mouseout", LeaveMe1);
+
+var nine1 = document.getElementsByClassName("ninehover")[1];
+nine1.addEventListener("mouseover", ShowMe2);
+nine1.addEventListener("mouseout", LeaveMe2);
+
+var nine2 = document.getElementsByClassName("ninehover")[2];
+nine2.addEventListener("mouseover", ShowMe3);
+nine2.addEventListener("mouseout", LeaveMe3);
+
+var nine3 = document.getElementsByClassName("ninehover")[3];
+nine3.addEventListener("mouseover", ShowMe4);
+nine3.addEventListener("mouseout", LeaveMe4);
+
+var nine4 = document.getElementsByClassName("ninehover")[4];
+nine4.addEventListener("mouseover", ShowMe5);
+nine4.addEventListener("mouseout", LeaveMe5);
+
+function ShowMe1()
+{
+        document.getElementsByClassName("nineshow")[0].style.left="+60vw";
+        document.getElementsByClassName("nineshow")[0].style.opacity="1";
+}
+
+function LeaveMe1()
+{
+        document.getElementsByClassName("nineshow")[0].style.left="+50vw";
+        document.getElementsByClassName("nineshow")[0].style.opacity="0";
+}
+
+
+function ShowMe2()
+{
+        document.getElementsByClassName("nineshow")[1].style.left="+60vw";
+        document.getElementsByClassName("nineshow")[1].style.opacity="1";
+}
+
+function LeaveMe2()
+{
+        document.getElementsByClassName("nineshow")[1].style.left="+50vw";
+        document.getElementsByClassName("nineshow")[1].style.opacity="0";
+}
+
+function ShowMe3()
+{
+        document.getElementsByClassName("nineshow")[2].style.left="+60vw";
+        document.getElementsByClassName("nineshow")[2].style.opacity="1";
+}
+
+function LeaveMe3()
+{
+        document.getElementsByClassName("nineshow")[2].style.left="+50vw";
+        document.getElementsByClassName("nineshow")[2].style.opacity="0";
+}
+
+function ShowMe4()
+{
+        document.getElementsByClassName("nineshow")[3].style.left="+60vw";
+        document.getElementsByClassName("nineshow")[3].style.opacity="1";
+}
+
+function LeaveMe4()
+{
+        document.getElementsByClassName("nineshow")[3].style.left="+50vw";
+        document.getElementsByClassName("nineshow")[3].style.opacity="0";
+}
+
+function ShowMe5()
+{
+        document.getElementsByClassName("nineshow")[4].style.left="+60vw";
+        document.getElementsByClassName("nineshow")[4].style.opacity="1";
+}
+
+function LeaveMe5()
+{
+        document.getElementsByClassName("nineshow")[4].style.left="+50vw";
+        document.getElementsByClassName("nineshow")[4].style.opacity="0";
+}
+
+
 $("#eleven").mouseover(function(){
         $("#eleventext").fadeIn(1200);
       });
