@@ -327,10 +327,9 @@ font-family: 'Neuton', serif; */
 
 .turn
 {
-    perspective: 2000px;
+    perspective: 1500px;
     position: relative;
     width:50vw;
-    background-color: violet;
 }
 
 .turn::before,
@@ -351,7 +350,6 @@ font-family: 'Neuton', serif; */
 }
 .turn::before
 {
-    background-color: royalblue;
     transform:rotateY(180deg);
 }
 
@@ -388,6 +386,31 @@ font-family: 'Neuton', serif; */
 #turn5::after
 {
     background-image:url("img/10.png");
+}
+
+#turn1::before
+{
+    background-image:url("img/06b.png");
+}
+
+#turn2::before
+{
+    background-image:url("img/07b.png");
+}
+
+#turn3::before
+{
+    background-image:url("img/08b.png");
+}
+
+#turn4::before
+{
+    background-image:url("img/09b.png");
+}
+
+#turn5::before
+{
+    background-image:url("img/10b.png");
 }
 
 #turn2,#turn3,#turn4,#turn5
