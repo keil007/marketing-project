@@ -538,20 +538,45 @@ font-family: 'Neuton', serif; */
     position: absolute;
     font-family: 'DM Mono', monospace;
     padding: 17vh 5vw 30vh;
-    transform: rotate(10deg);
     font-size:16px;
     text-align:center;
     color:#000;
+
+    transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
+    transform: rotate(40deg);
+    opacity:0;
+    top:30vh;
+}
+
+#twelvetext{
+    transition: 0.6s all ease-in-out;
+}
+
+#twelvetext:hover{
+    transform: scale(1.15,1.15);
 }
 
 #twelveright
 {
     width:46vw;
     position: absolute;
-    left:50vw;
-    top:7vh;
+    left:47vw;
     padding-left:5vw;
+    transform: rotate(-50deg);
+
+    transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
+    opacity:0;
+    top:30vh;
 }
+
+#twelveright table{
+    transition: 0.6s all ease-in-out;
+}
+
+#twelveright table:hover{
+    transform:rotate(10deg);
+}
+
 
 #twelveright table,tr,td
 {

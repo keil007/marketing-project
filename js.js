@@ -153,10 +153,26 @@ $("#eleven").mouseover(function(){
         $("#eleventext").fadeIn(1200);
       });
 
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
+      function twelve(){
+        document.getElementById("twelveright").style.top="3vh";
+        document.getElementById("twelveright").style.opacity="1";
+        document.getElementById("twelveright").style.transform="rotate(-5deg)";
+}
+
+$("#twelve").mouseover(function(){
+        document.getElementById("twelveleft").style.top="3vh";
+        document.getElementById("twelveleft").style.opacity="1";
+        document.getElementById("twelveleft").style.transform="rotate(10deg)";
+        setTimeout(twelve, 550);
+      });
+
+
+      
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
           ['Group', 'Percantage'],
