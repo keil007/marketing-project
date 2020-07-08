@@ -708,3 +708,90 @@ font-family: 'Neuton', serif; */
     font-size:100px;
     text-align:center;
 }
+
+#fifteen
+{
+    background-color: tomato;
+    position: relative;
+}
+
+#donut
+{
+    left:45vw;
+    top:45vh;
+    width:10vw;
+    height:10vw;
+    position: absolute;
+    animation-name: rotacja;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#donut::after
+{
+    content:'';
+    position: absolute;
+}
+
+#konkurencja
+{
+    position: absolute;
+    width:10vw;
+    height:10vw;
+    background-color: whitesmoke;
+    left:0vw;
+    top:0vh;
+    border-radius: 50%;
+    text-align: center;
+    font-size:24px;
+    font-family: 'Neuton', serif;
+    padding-top: 8vh;
+    color:#222;
+}
+
+.konkurenci
+{
+    position: absolute;
+    width:10vw;
+    height:10vw;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8vh;
+}
+
+#konkurenci1
+{
+    left:0vw;
+    top:-18vw;
+}
+
+#konkurenci2
+{
+    left:-17vw;
+    top:-6vw;
+}
+
+#konkurenci3
+{
+    left:-11vw;
+    top:15vw;
+}
+
+#konkurenci4
+{
+    left:11vw;
+    top:15vw;
+}
+
+#konkurenci5
+{
+    left:17vw;
+    top:-6vw;
+}
+
+@keyframes rotacja {
+    0%   {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+  }
