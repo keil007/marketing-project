@@ -728,10 +728,10 @@ font-family: 'Neuton', serif; */
     animation-timing-function: linear;
 }
 
-#donut::after
+.active
 {
-    content:'';
-    position: absolute;
+    animation-name: rotacja;
+    animation-play-state: paused;
 }
 
 #konkurencja

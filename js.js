@@ -201,3 +201,9 @@ function drawChart() {
 
         chart.draw(data, options);
       }
+
+
+$('.konkurenci').mouseover(function(){
+        $('#donut').toggleClass('active');
+})
+
