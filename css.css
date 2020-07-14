@@ -26,18 +26,65 @@ font-family: 'Neuton', serif; */
 
 #one
 {
-    background-image:url("img/tlo3.jpg");
+    background-color:#e1c076;
+    position: relative;
+    -webkit-animation: colorPulse 10s 1 alternate;
 }
 
-#overlay
+@-webkit-keyframes colorPulse {
+    0% {background-color: white;}
+    12.5% {background-color:#e1c076;}
+    25% {background-color: black;}
+    38.5% {background-color: #e1c076;}
+    50% {background-color: white;}
+    60% {background-color: white;}
+    70% {background-color: #e1c076;}
+}
+
+#start
 {
     position: absolute;
-    width:25vw;
-    height:110vh;
-    background-color:#e1c076;
-    font-size:22px;
+    width:18vw;
+    height:16vw;
+    left:41vw;
+    top:26vh;
+}
+
+#start iframe
+{
+    width:18vw;
+    height:16vw;
+    animation: broom 0.5s ease-in-out 2s 2 alternate;
+}
+
+@keyframes broom
+{
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.2,1.2);}
+    100% {transform: scale(1,1);}
+}
+
+.gone
+{
+    display:none;
+}
+
+#listone
+{
     text-align: center;
-    padding:20px;
+    font-size:62px;
+    font-family: 'Neuton', serif;
+    padding-top:2vh;
+    list-style-type: none;
+    color:#222;
+    display:none;
+    letter-spacing: 10px;
+    line-height: 70px; /* I know that i should use rem or em value, but i'm gonna use it next time */
+}
+
+#listone:hover
+{
+    text-shadow:8px 8px 15px #666;
 }
 
 #gif1
@@ -121,14 +168,6 @@ font-family: 'Neuton', serif; */
 #five
 {
     -webkit-animation: colorPulse 6s infinite alternate;
-}
-
-@-webkit-keyframes colorPulse {
-    0% {background-color: #e1c076;}
-    25% {background-color: white;}
-    50% {background-color: #e1c076;}
-    75% {background-color: black;}
-  100% {background-color: #e1c076;}
 }
 
 .item img
@@ -722,16 +761,7 @@ font-family: 'Neuton', serif; */
     width:10vw;
     height:10vw;
     position: absolute;
-    animation-name: rotacja;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.active
-{
-    animation-name: rotacja;
-    animation-play-state: paused;
+    transition: transform 1000s linear;
 }
 
 #konkurencja

@@ -1,3 +1,15 @@
+document.addEventListener("load", begone());
+
+function begone()
+{
+        setTimeout(function(){$("#start").addClass("gone");},5000);
+        setTimeout(function(){
+                document.getElementById("listone").style.display = "block";
+                document.getElementById("listone").style.WebkitAnimation = "fadeInUp 1.8s ease-in-out";
+                document.getElementById("listone").style.animation = "fadeInUp 1.8s ease-in-out";
+        },6000);
+}
+
 var x = document.getElementById("eight");
 x.addEventListener("mouseenter", myFunction);
 var abc=1;
@@ -202,8 +214,19 @@ function drawChart() {
         chart.draw(data, options);
       }
 
+var f = document.getElementById('donut');
+var bruh=true;
+function rotato(){
+        if(bruh)
+        {f.style.transform = 'rotate(60000deg)';
+        setTimeout(rotato,1);}
+        else {f.style.transform = 'rotate(60000deg)';
+        setTimeout(rotato,1);}
+}
 
-$('.konkurenci').mouseover(function(){
-        $('#donut').toggleClass('active');
-})
+        document.addEventListener('load', rotato(),true);   
 
+        document.getElementsByClassName('konkurenci')[0].addEventListener('mouseover', function(){   
+                alert('noprzeceidziala');
+                bruh=false;
+        });
