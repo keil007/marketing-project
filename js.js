@@ -2,11 +2,13 @@ document.addEventListener("load", begone());
 
 function begone()
 {
+        $("body").addClass("stop-scrolling");
         setTimeout(function(){$("#start").addClass("gone");},5000);
         setTimeout(function(){
                 document.getElementById("listone").style.display = "block";
                 document.getElementById("listone").style.WebkitAnimation = "fadeInUp 1.8s ease-in-out";
                 document.getElementById("listone").style.animation = "fadeInUp 1.8s ease-in-out";
+                $("body").removeClass("stop-scrolling");
         },6000);
 }
 
