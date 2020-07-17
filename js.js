@@ -8,9 +8,13 @@ function begone()
                 document.getElementById("listone").style.display = "block";
                 document.getElementById("listone").style.WebkitAnimation = "fadeInUp 1.8s ease-in-out";
                 document.getElementById("listone").style.animation = "fadeInUp 1.8s ease-in-out";
-                $("body").removeClass("stop-scrolling");
+                setTimeout(function(){$("body").removeClass("stop-scrolling");},1800);
         },6000);
 }
+
+$("#buttonik").on("click", function() {
+        $("body").animate({scrollTop:1320},1000);
+})
 
 var x = document.getElementById("eight");
 x.addEventListener("mouseenter", myFunction);
@@ -59,6 +63,14 @@ var xd=true;
 
 function znikanie()
 {
+        var navbar = document.getElementsByClassName("scrollup")[0];
+
+        if (window.pageYOffset >= 1400) {
+                navbar.classList.remove("gone")
+        } else {
+                navbar.classList.add("gone");
+        }
+
         if(xd){
                 document.getElementById("a").style.display = "none";
                 document.getElementsByClassName("mig")[0].style.display = "none";
