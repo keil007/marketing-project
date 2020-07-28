@@ -244,3 +244,33 @@ function rotato(){
                 alert('noprzeceidziala');
                 bruh=false;
         });
+
+/* 
+        Dobra to gówno trzeba zrobić na nowo
+        Animacja będzie trwać bez przerw, dopóki nie zajdzie zdarzenie mouseenter któregokolwiek z elementów
+        Więc trzeba zrobić 5 oddzielnych funkcji
+        Albo 1 z elementem wejściowym
+        Wtedy nastąpi przerwanie animacji
+        Zajdzie zwiększenie diva, animacja staje w miejscu i opacity elementów wewnątrz zmienia się na 0
+        Resztę trzeba w css'ie
+
+        Kadrę pracowniczą zrobić jako rysunkowe bazgroły
+        I dodać ich jakiś ruch i może zatrzymywanie się po najechaniu
+        Niech się tak trzęsą jak pojebane
+
+*/
+
+        var tylkoraz=true;
+        var bg= document.getElementById("sixteen");
+        $("#sixteen").mouseover(setTimeout(zastopuj,1000));
+
+        function zastopuj()
+        {
+                if(tylkoraz){
+                        bg.style.backgroundImage="url('img/gifson4.gif')";
+                        setTimeout(zastopuj,1000);
+                        tylkoraz=false;
+                } else{
+                bg.style.backgroundColor="#000"; 
+                bg.style.backgroundImage="none"; }
+        }
