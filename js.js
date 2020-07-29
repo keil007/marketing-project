@@ -175,6 +175,40 @@ function LeaveMe5()
 }
 
 
+$("#ten3").mouseenter(function(){
+        $(this).css("width","40vw");
+        $("#ten4").css("width","30vw");
+        $("#ten5").css("width","30vw");
+});
+$("#ten4").mouseenter(function(){
+        $(this).css("width","40vw");
+        $("#ten3").css("width","30vw");
+        $("#ten5").css("width","30vw");
+});
+$("#ten5").mouseenter(function(){
+        $(this).css("width","40vw");
+        $("#ten4").css("width","30vw");
+        $("#ten3").css("width","30vw");
+});
+
+$("#ten3").mouseleave(function(){
+        $(this).css("width","33vw");
+        $("#ten4").css("width","33vw");
+        $("#ten5").css("width","33vw");
+});
+$("#ten4").mouseleave(function(){
+        $(this).css("width","33vw");
+        $("#ten3").css("width","33vw");
+        $("#ten5").css("width","33vw");
+});
+$("#ten5").mouseleave(function(){
+        $(this).css("width","33vw");
+        $("#ten4").css("width","33vw");
+        $("#ten3").css("width","33vw");
+});
+
+
+
 $("#eleven").mouseover(function(){
         $("#eleventext").fadeIn(1200);
       });
