@@ -155,27 +155,62 @@ font-family: 'Neuton', serif; */
 
 #three
 {
-    background-image: url("img/tlo2.jpg");
     text-align:center;
     position: relative;
+}
+
+#three-headline
+{
+    position: absolute;
+    top:41vh;
+    width:16vw;
+    left:20vw;
+    z-index:3;
+    height:12vh;
+    transform: rotate(-7deg);
+    background-color: #ffffff;
+    border: 2px #e1c076 solid;
+    border-radius:2px;
+    box-shadow: 8px 8px 10px #222, -2px -2px 7px #222;
+}
+
+#three-back
+{
+    width: 100%;
+    height:100%;
+    background-image: url("img/tlo2.jpg");
+    background-size: 102%;
+    opacity: 0.8;
+}
+
+#three-headline p
+{
+    font-size:54px;
+    color:#222;
+    text-shadow: 2px 2px 6px #e1c076;
 }
 
 #threetext
 {
     position: absolute;
-    top:30vh;
-    width:50vw;
-    left:25vw;
-    height:40vh;
+    transform: rotate(5deg);
+    text-shadow: 1px 0 0 #222, -1px 0 0 #222, 0 1px 0 #222, 0 -1px 0 #222, 1px 1px #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 2px 2px 16px #e1c076;
+    border-radius:2px;
+    top:35vh;
+    width:44vw;
+    left:35vw;
+    height:38vh;
     background-color: #ffffff;
-    border: 2px brown dotted; 
+    border: 2px #e1c076 solid;
+    box-shadow: 8px 8px 10px #222, -2px -2px 7px #222;
 }
 
-#three p
+#threetext p
 {
     font-size:26px;
-    padding-top:10px;
-    color:#815e11;
+    padding:auto;
+    padding-top:8px;
+    color:#e1c076;
 }
 
 #four
@@ -624,7 +659,6 @@ font-family: 'Neuton', serif; */
 #ten a
 {
     font-size: 16px;
-    text-align: center;
     line-height: 27px;
 }
 
