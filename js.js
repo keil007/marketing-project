@@ -16,6 +16,10 @@ $("#buttonik").on("click", function() {
         $("body").animate({scrollTop:1320},1000);
 })
 
+$("#four").mouseover(function(){
+        $("#fourtext").fadeIn(2000);
+      });
+
 var x = document.getElementById("eight");
 x.addEventListener("mouseenter", myFunction);
 var abc=1;
