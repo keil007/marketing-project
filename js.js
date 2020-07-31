@@ -267,35 +267,57 @@ function drawChart() {
       }
 
 var f = document.getElementById('donut');
+var konk0=document.getElementById("konkurencja");
+var konk1=document.getElementsByClassName("konkurenci")[0];
+var konk2=document.getElementsByClassName("konkurenci")[1];
+var konk3=document.getElementsByClassName("konkurenci")[2];
+var konk4=document.getElementsByClassName("konkurenci")[3];
+var konk5=document.getElementsByClassName("konkurenci")[4];
 var bruh=true;
+
 function rotato(){
-        if(bruh)
-        {f.style.transform = 'rotate(60000deg)';
-        setTimeout(rotato,1);}
-        else {f.style.transform = 'rotate(60000deg)';
-        setTimeout(rotato,1);}
+        f.style.transform = 'rotate(60000deg)';
+        konk0.style.transform='rotate(-60000deg)';
+        konk1.style.transform='rotate(-60000deg)';
+        konk2.style.transform='rotate(-60000deg)';
+        konk3.style.transform='rotate(-60000deg)';
+        konk4.style.transform='rotate(-60000deg)';
+        konk5.style.transform='rotate(-60000deg)';
+        console.log("ziobro, ty kurwo jebana");
+        //setTimeout(rotato,1);
+        }
+
+function trzym(){
+        f.style.transform = 'rotate(0deg)';
+        konk0.style.transform='rotate(0deg)';
+        konk1.style.transform='rotate(0deg)';
+        konk2.style.transform='rotate(0deg)';
+        konk3.style.transform='rotate(0deg)';
+        konk4.style.transform='rotate(0deg)';
+        konk5.style.transform='rotate(0deg)';
+        console.log("przestań mi rodzinę prześladować");
 }
 
-        document.addEventListener('load', rotato(),true);   
+document.addEventListener('load', rotato(),true);
 
-        document.getElementsByClassName('konkurenci')[0].addEventListener('mouseover', function(){   
-                alert('noprzeceidziala');
-                bruh=false;
-        });
+        document.getElementsByClassName('konkurenci')[0].addEventListener('mouseenter', trzym);
+        document.getElementsByClassName('konkurenci')[1].addEventListener('mouseenter', trzym);
+        document.getElementsByClassName('konkurenci')[2].addEventListener('mouseenter', trzym);
+        document.getElementsByClassName('konkurenci')[3].addEventListener('mouseenter', trzym);
+        document.getElementsByClassName('konkurenci')[4].addEventListener('mouseenter', trzym);
 
-/* 
-        Dobra to gówno trzeba zrobić na nowo
-        Animacja będzie trwać bez przerw, dopóki nie zajdzie zdarzenie mouseenter któregokolwiek z elementów
-        Więc trzeba zrobić 5 oddzielnych funkcji
-        Albo 1 z elementem wejściowym
-        Wtedy nastąpi przerwanie animacji
+        document.getElementsByClassName('konkurenci')[0].addEventListener('mouseleave', rotato);
+        document.getElementsByClassName('konkurenci')[1].addEventListener('mouseleave', rotato);
+        document.getElementsByClassName('konkurenci')[2].addEventListener('mouseleave', rotato);
+        document.getElementsByClassName('konkurenci')[3].addEventListener('mouseleave', rotato);
+        document.getElementsByClassName('konkurenci')[4].addEventListener('mouseleave', rotato);
+
+/*
+
+Mogę to też zrobić (JAK MI SIĘ KURWA BĘDZIE CHCIAŁO Z TYM PIERDOLIĆ) przez animation play state i powinno to być łatwiejsze
+Może i anwet kurwa jest to niezbędne jprdl
         Zajdzie zwiększenie diva, animacja staje w miejscu i opacity elementów wewnątrz zmienia się na 0
         Resztę trzeba w css'ie
-
-        Kadrę pracowniczą zrobić jako rysunkowe bazgroły
-        I dodać ich jakiś ruch i może zatrzymywanie się po najechaniu
-        Niech się tak trzęsą jak pojebane
-
 */
 
         var tylkoraz=true;

@@ -246,7 +246,23 @@ font-family: 'Neuton', serif; */
 
 #five
 {
-    -webkit-animation: colorPulse 6s infinite alternate;
+    background-color: #e1c076;
+}
+
+#fivetop
+{
+    background-color: chocolate;
+    width:40vw;
+    height: 35vh;
+    position: relative;
+    margin: auto;
+    top: 35vh;
+    text-align: center;
+}
+
+#fivebottom
+{
+    display:none;
 }
 
 .item img
@@ -929,6 +945,7 @@ font-family: 'Neuton', serif; */
     font-family: 'Neuton', serif;
     padding-top: 8vh;
     color:#222;
+    transition: transform 1000s linear;
 }
 
 .konkurenci
@@ -940,6 +957,7 @@ font-family: 'Neuton', serif; */
     border-radius: 50%;
     text-align: center;
     padding-top: 8vh;
+    transition: transform 1000s linear;
 }
 
 #konkurenci1
@@ -975,6 +993,12 @@ font-family: 'Neuton', serif; */
 @keyframes rotacja {
     0%   {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
+  }
+
+  
+@keyframes rotacjaodwrotna {
+    0%   {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
   }
 
 #sixteen
