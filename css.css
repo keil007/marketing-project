@@ -928,7 +928,8 @@ font-family: 'Neuton', serif; */
     width:10vw;
     height:10vw;
     position: absolute;
-    transition: transform 1000s linear;
+    transition: transform 1s linear;
+    animation: rotacja 7s linear 0s infinite;
 }
 
 #konkurencja
@@ -945,7 +946,8 @@ font-family: 'Neuton', serif; */
     font-family: 'Neuton', serif;
     padding-top: 8vh;
     color:#222;
-    transition: transform 1000s linear;
+    transition: transform 1s linear;
+    animation: rotacjaodwrotna 7s linear 0s infinite;
 }
 
 .konkurenci
@@ -953,12 +955,29 @@ font-family: 'Neuton', serif; */
     position: absolute;
     width:10vw;
     height:10vw;
-    background-color: whitesmoke;
     border-radius: 50%;
     text-align: center;
     padding-top: 8vh;
-    transition: transform 1000s linear;
+    transition: transform 1s linear;
+    animation: rotacjaodwrotna 7s linear 0s infinite;
 }
+
+.powieksz
+{
+    background-color: whitesmoke;
+    transition: transform 1s linear;
+    border-radius: 50%;
+    width:10vw;
+    height:10vw;
+    margin-top: -8vh;
+}
+
+.powieksz:hover
+{
+    transform:scale(2.5);
+}
+
+/* Teraz mogę zrobić 5 róznych funkcji, każda by zmieniała tło na inny kolor. do tego oczywiście dobrać te obrazy z podpisami i linkami"*/
 
 #konkurenci1
 {

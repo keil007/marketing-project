@@ -276,30 +276,24 @@ var konk5=document.getElementsByClassName("konkurenci")[4];
 var bruh=true;
 
 function rotato(){
-        f.style.transform = 'rotate(60000deg)';
-        konk0.style.transform='rotate(-60000deg)';
-        konk1.style.transform='rotate(-60000deg)';
-        konk2.style.transform='rotate(-60000deg)';
-        konk3.style.transform='rotate(-60000deg)';
-        konk4.style.transform='rotate(-60000deg)';
-        konk5.style.transform='rotate(-60000deg)';
-        console.log("ziobro, ty kurwo jebana");
-        //setTimeout(rotato,1);
+        f.style.animationPlayState = 'running';
+        konk0.style.animationPlayState='running';
+        konk1.style.animationPlayState='running';
+        konk2.style.animationPlayState='running';
+        konk3.style.animationPlayState='running';
+        konk4.style.animationPlayState='running';
+        konk5.style.animationPlayState='running';
         }
 
 function trzym(){
-        f.style.transform = 'rotate(0deg)';
-        konk0.style.transform='rotate(0deg)';
-        konk1.style.transform='rotate(0deg)';
-        konk2.style.transform='rotate(0deg)';
-        konk3.style.transform='rotate(0deg)';
-        konk4.style.transform='rotate(0deg)';
-        konk5.style.transform='rotate(0deg)';
-        console.log("przestań mi rodzinę prześladować");
+        f.style.animationPlayState = 'paused';
+        konk0.style.animationPlayState='paused';
+        konk1.style.animationPlayState='paused';
+        konk2.style.animationPlayState='paused';
+        konk3.style.animationPlayState='paused';
+        konk4.style.animationPlayState='paused';
+        konk5.style.animationPlayState='paused';
 }
-
-document.addEventListener('load', rotato(),true);
-
         document.getElementsByClassName('konkurenci')[0].addEventListener('mouseenter', trzym);
         document.getElementsByClassName('konkurenci')[1].addEventListener('mouseenter', trzym);
         document.getElementsByClassName('konkurenci')[2].addEventListener('mouseenter', trzym);
@@ -313,11 +307,7 @@ document.addEventListener('load', rotato(),true);
         document.getElementsByClassName('konkurenci')[4].addEventListener('mouseleave', rotato);
 
 /*
-
-Mogę to też zrobić (JAK MI SIĘ KURWA BĘDZIE CHCIAŁO Z TYM PIERDOLIĆ) przez animation play state i powinno to być łatwiejsze
-Może i anwet kurwa jest to niezbędne jprdl
-        Zajdzie zwiększenie diva, animacja staje w miejscu i opacity elementów wewnątrz zmienia się na 0
-        Resztę trzeba w css'ie
+        Zajdzie zwiększenie diva, animacja staje w miejscu i opacity elementów wewnątrz zmienia się na 1
 */
 
         var tylkoraz=true;
