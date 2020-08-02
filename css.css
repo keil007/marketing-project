@@ -7,7 +7,8 @@ body
 
 /* font-family: 'DM Mono', monospace;
 font-family: 'Amatic SC', cursive;
-font-family: 'Neuton', serif; */
+font-family: 'Neuton', serif;
+font-family: 'Pacifico', cursive; */
 
 #content
 {
@@ -273,16 +274,25 @@ font-family: 'Neuton', serif; */
 
 #seven
 {
-    background-color: white;
     text-align:center;
+    background-image:linear-gradient( #fff,#fff,#fff,#fff,#fff,#fff,#111);
 }
 
-#seven img
+#seven-content
 {
-    display:inline-block;
-    width:45vw;
-    margin:120px 30px 0px 30px;
-    height:65vh;
+    background-color: #e1c076;
+}
+
+#seven-picture1 img
+{
+    width:100px;
+    height:100px;
+}
+
+#seven-picture2 img
+{
+    width:100px;
+    height:100px;
 }
 
 #eight
@@ -808,13 +818,10 @@ font-family: 'Neuton', serif; */
 {
     background-image:linear-gradient( #e1c076,#222);
     height:150vh;
-    /*position: relative;
-    /* klienci, zaraz niżej cele */
 }
 
 .content
 {
-
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -874,11 +881,6 @@ font-family: 'Neuton', serif; */
     top:20vh;
 }
 
-
-
-
-
-
 #fourteen
 {
     background-color: #222;
@@ -917,7 +919,7 @@ font-family: 'Neuton', serif; */
 
 #fifteen
 {
-    background-color: tomato;
+    background-color: seagreen;
     position: relative;
 }
 
@@ -935,20 +937,21 @@ font-family: 'Neuton', serif; */
 #konkurencja
 {
     position: absolute;
-    width:10vw;
-    height:10vw;
-    background-color: whitesmoke;
-    left:0vw;
-    top:0vh;
-    border-radius: 50%;
-    text-align: center;
-    font-size:24px;
+    text-overflow: clip;
+    line-height: 40px;
+    width:5vw;
+    height:60vw;
+    left:5vw;
+    top:18vh;
+    font-size:48px;
     font-family: 'Neuton', serif;
-    padding-top: 8vh;
     color:#222;
-    transition: transform 1s linear;
-    animation: rotacjaodwrotna 7s linear 0s infinite;
+    text-shadow: 1px 1px 1px #e1c076;
 }
+/* font-family: 'DM Mono', monospace;
+font-family: 'Amatic SC', cursive;
+font-family: 'Neuton', serif;
+font-family: 'Pacifico', cursive; */
 
 .konkurenci
 {
@@ -964,17 +967,28 @@ font-family: 'Neuton', serif; */
 
 .powieksz
 {
-    background-color: whitesmoke;
-    transition: transform 1s linear;
+    transition: all 1s linear;
     border-radius: 50%;
     width:10vw;
     height:10vw;
     margin-top: -8vh;
+    background-size: cover;
 }
 
 .powieksz:hover
 {
     transform:scale(2.5);
+    opacity: 0;
+}
+
+.powieksz1
+{
+    /*background-image: url("img/coffeeperk2.jpg");*/
+    background-color: #e1c076;
+    opacity: 0;
+    width:30vw;
+    height:30vh;
+    z-index: 5;
 }
 
 /* Teraz mogę zrobić 5 róznych funkcji, każda by zmieniała tło na inny kolor. do tego oczywiście dobrać te obrazy z podpisami i linkami"*/

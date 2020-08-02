@@ -267,32 +267,32 @@ function drawChart() {
       }
 
 var f = document.getElementById('donut');
-var konk0=document.getElementById("konkurencja");
 var konk1=document.getElementsByClassName("konkurenci")[0];
 var konk2=document.getElementsByClassName("konkurenci")[1];
 var konk3=document.getElementsByClassName("konkurenci")[2];
 var konk4=document.getElementsByClassName("konkurenci")[3];
 var konk5=document.getElementsByClassName("konkurenci")[4];
-var bruh=true;
 
 function rotato(){
         f.style.animationPlayState = 'running';
-        konk0.style.animationPlayState='running';
         konk1.style.animationPlayState='running';
         konk2.style.animationPlayState='running';
         konk3.style.animationPlayState='running';
         konk4.style.animationPlayState='running';
         konk5.style.animationPlayState='running';
-        }
+        $("#konkurenci1").removeClass("powieksz1");
+        $("#powieksz1").css("opacity","0");
+}
 
 function trzym(){
         f.style.animationPlayState = 'paused';
-        konk0.style.animationPlayState='paused';
         konk1.style.animationPlayState='paused';
         konk2.style.animationPlayState='paused';
         konk3.style.animationPlayState='paused';
         konk4.style.animationPlayState='paused';
         konk5.style.animationPlayState='paused';
+        $(this).addClass("powieksz1");
+        $("#powieksz1").css("opacity","1");
 }
         document.getElementsByClassName('konkurenci')[0].addEventListener('mouseenter', trzym);
         document.getElementsByClassName('konkurenci')[1].addEventListener('mouseenter', trzym);
