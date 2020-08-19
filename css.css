@@ -277,7 +277,7 @@ font-family: 'Pacifico', cursive; */
     text-align:center;
     height: 100vh;
     position: relative;
-    background-color: #fff;
+    background-color: #bbb;
 }
 
 .triangle-up
@@ -956,7 +956,7 @@ font-family: 'Pacifico', cursive; */
 
 #thirteen
 {
-    background-image:linear-gradient( #e1c076,#222);
+    background-image:linear-gradient(to right, #fff, #ccc,#7697e1,#333,#000);
     height:150vh;
 }
 
@@ -974,17 +974,15 @@ font-family: 'Pacifico', cursive; */
     margin:0px 20px;
     text-align:center;
     font-family: 'Amatic SC', cursive;
-    text-shadow: 2px 0 0 #222, -2px 0 0 #222, 0 2px 0 #222, 0 -2px 0 #222, 1px 1px #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 #thirteen p
 {
-    margin:15px 30px;
-    font-size:20px;
-    color:#e1c076;
+    margin:30px 30px;
+    font-size:21px;
     font-family: 'DM Mono', monospace;
     text-align:center;
-    text-shadow: 2px 0 0 #222, -2px 0 0 #222, 0 2px 0 #222, 0 -2px 0 #222, 1px 1px #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222;
 }
 
 #piechart
@@ -1001,6 +999,7 @@ font-family: 'Pacifico', cursive; */
     position: absolute;
     height:95vh;
     width:33vw;
+    color:#000;
 }
 
 #thirteen-middle
@@ -1012,6 +1011,13 @@ font-family: 'Pacifico', cursive; */
     top:20vh;
 }
 
+#thirteen-middle p
+{
+    background: -webkit-linear-gradient(left, #000,#000,#fff,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #thirteen-right
 {
     height:95vh;
@@ -1019,6 +1025,7 @@ font-family: 'Pacifico', cursive; */
     width:33vw;
     position: absolute;
     top:20vh;
+    color:#fff;
 }
 
 #fourteen

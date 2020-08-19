@@ -29,26 +29,34 @@ $("#four").mouseover(function(){
 
 $(".seven-content-1").mouseenter(function(){
         console.log("pizda ogień 8 kobiet");
-        $(this).css("top","0vh");
-        $(".triangle-up").css("top","-10vh");
+        $(this).css("top","5vh");
+        $(".triangle-up").css("top","-5vh");
+        $(this).css("left","22vw");
+        $(".triangle-up").css("left","2vw");
 });
 
       $(".seven-content-2").mouseenter(function(){
         console.log("chuj na dole");
-        $(this).css("top","50vh");
-        $(".triangle-down").css("top","40vh");
+        $(this).css("top","55vh");
+        $(".triangle-down").css("top","45vh");
+        $(this).css("left","22vw");
+        $(".triangle-down").css("left","2vw");
       });
 
 $("#seven-picture1").mouseenter(function(){
         console.log("prawie");
-        $(this).css("top","5vh");
-        $(".triangle-right").css("top","-10vh");
+        $(this).css("top","10vh");
+        $(".triangle-right").css("top","-5vh");
+        $(this).css("left","62vw");
+        $(".triangle-right").css("left","52vw");
       });
       
 $("#seven-picture2").mouseenter(function(){
         console.log("lewacka kurwa");
-        $(this).css("top","5vh");
-        $(".triangle-left").css("top","-10vh");
+        $(this).css("top","10vh");
+        $(".triangle-left").css("top","-5vh");
+        $(this).css("left","7vw");
+        $(".triangle-left").css("left","2vw");
       });
 
 
@@ -58,24 +66,32 @@ $("#seven-picture2").mouseenter(function(){
         console.log("pizda ogień 8 kobiet");
         $(this).css("top","10vh");
         $(".triangle-up").css("top","0vh");
+        $(this).css("left","20vw");
+        $(".triangle-up").css("left","0vw");
 });
 
       $(".seven-content-2").mouseleave(function(){
         console.log("chuj na dole");
         $(this).css("top","60vh");
         $(".triangle-down").css("top","50vh");
+        $(this).css("left","20vw");
+        $(".triangle-down").css("left","0vw");
       });
 
 $("#seven-picture1").mouseleave(function(){
         console.log("prawie");
         $(this).css("top","15vh");
         $(".triangle-right").css("top","0vh");
+        $(this).css("left","60vw");
+        $(".triangle-right").css("left","50vw");
       });
       
 $("#seven-picture2").mouseleave(function(){
         console.log("lewacka kurwa");
         $(this).css("top","15vh");
         $(".triangle-left").css("top","0vh");
+        $(this).css("left","5vw");
+        $(".triangle-left").css("left","0vw");
       });
 
 
@@ -98,6 +114,8 @@ $("#seven-picture2").mouseleave(function(){
                       document.getElementById(jebac).style.background= "#e1c076";
                       abc++;
                       pochuj++;
+                      document.getElementById("zagrozenia").style.display="inline";
+                      document.getElementById("slabe").style.display="inline";
                       setTimeout(myFunction,150);
               }
               if(pochuj==2)
@@ -108,7 +126,6 @@ $("#seven-picture2").mouseleave(function(){
               }
               if(pochuj==11)
               {
-                        document.getElementById("slabe").style.display="inline";
                       document.getElementById("slabe").style.left="+57vw";
                       document.getElementById("slabe").style.opacity="1";
                       $("#kaf2").fadeIn(2000);
@@ -122,7 +139,6 @@ $("#seven-picture2").mouseleave(function(){
               }
               if(pochuj==26)
               {
-                        document.getElementById("zagrozenia").style.display="inline";
                       document.getElementById("zagrozenia").style.left="+57vw";
                       document.getElementById("zagrozenia").style.opacity="1";
                       //zmiana
