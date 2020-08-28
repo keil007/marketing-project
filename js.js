@@ -8,7 +8,12 @@ function begone()
                 document.getElementById("listone").style.display = "block";
                 document.getElementById("listone").style.WebkitAnimation = "fadeInUp 1.8s ease-in-out";
                 document.getElementById("listone").style.animation = "fadeInUp 1.8s ease-in-out";
-                setTimeout(function(){$("body").removeClass("stop-scrolling");},1800);
+                setTimeout(function()
+                {
+                        $("body").removeClass("stop-scrolling");
+                        $("#content").addClass("start-scrolling");
+                }
+                ,1800);
         },6000);
 }
 
