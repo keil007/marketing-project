@@ -18,7 +18,7 @@ function begone()
 }
 
 $("#buttonik").on("click", function() {
-        $("body").animate({scrollTop:1320},1000);
+        $("body").animate({scrollTop:1700},1000);
 })
 
 $("#four").mouseover(function(){
