@@ -17,9 +17,31 @@ function begone()
         },6000);
 }
 
-$("#buttonik").on("click", function() {
-        $("body").animate({scrollTop:1700},1000);
-})
+
+
+$('#buttonik').on('click', function() {
+        const images = $('#two').position().top;
+      
+        $('html, body').animate(
+          {
+            scrollTop: images
+          },
+          1100
+        );
+      });
+
+$('#BackToTop').on('click', function() {
+        const toptop = $('#one').position().top;
+      
+        $('html, body').animate(
+          {
+            scrollTop: toptop
+          },
+          1100
+        );
+      });
+
+
 
 $("#four").mouseover(function(){
         $("#fourtext").fadeIn(2000);
@@ -33,7 +55,6 @@ $("#four").mouseover(function(){
 
 
 $(".seven-content-1").mouseenter(function(){
-        console.log("pizda ogień 8 kobiet");
         $(this).css("top","5vh");
         $(".triangle-up").css("top","-5vh");
         $(this).css("left","22vw");
@@ -41,7 +62,6 @@ $(".seven-content-1").mouseenter(function(){
 });
 
       $(".seven-content-2").mouseenter(function(){
-        console.log("chuj na dole");
         $(this).css("top","55vh");
         $(".triangle-down").css("top","45vh");
         $(this).css("left","22vw");
@@ -49,7 +69,6 @@ $(".seven-content-1").mouseenter(function(){
       });
 
 $("#seven-picture1").mouseenter(function(){
-        console.log("prawie");
         $(this).css("top","10vh");
         $(".triangle-right").css("top","-5vh");
         $(this).css("left","62vw");
@@ -57,7 +76,6 @@ $("#seven-picture1").mouseenter(function(){
       });
       
 $("#seven-picture2").mouseenter(function(){
-        console.log("lewacka kurwa");
         $(this).css("top","10vh");
         $(".triangle-left").css("top","-5vh");
         $(this).css("left","7vw");
@@ -68,7 +86,6 @@ $("#seven-picture2").mouseenter(function(){
 
 
       $(".seven-content-1").mouseleave(function(){
-        console.log("pizda ogień 8 kobiet");
         $(this).css("top","10vh");
         $(".triangle-up").css("top","0vh");
         $(this).css("left","20vw");
@@ -76,7 +93,6 @@ $("#seven-picture2").mouseenter(function(){
 });
 
       $(".seven-content-2").mouseleave(function(){
-        console.log("chuj na dole");
         $(this).css("top","60vh");
         $(".triangle-down").css("top","50vh");
         $(this).css("left","20vw");
@@ -84,7 +100,6 @@ $("#seven-picture2").mouseenter(function(){
       });
 
 $("#seven-picture1").mouseleave(function(){
-        console.log("prawie");
         $(this).css("top","15vh");
         $(".triangle-right").css("top","0vh");
         $(this).css("left","60vw");
@@ -92,7 +107,6 @@ $("#seven-picture1").mouseleave(function(){
       });
       
 $("#seven-picture2").mouseleave(function(){
-        console.log("lewacka kurwa");
         $(this).css("top","15vh");
         $(".triangle-left").css("top","0vh");
         $(this).css("left","5vw");
@@ -159,7 +173,7 @@ $("#seven-picture2").mouseleave(function(){
               var navbar = document.getElementsByClassName("scrollup")[0];
       
               if (window.pageYOffset >= 1400) {
-                      navbar.classList.remove("gone")
+                      navbar.classList.remove("gone");
               } else {
                       navbar.classList.add("gone");
               }
@@ -355,6 +369,8 @@ $("#seven-picture2").mouseleave(function(){
               chart.draw(data, options);
             }
       
+
+
       var f = document.getElementById('donut');
       var konk1=document.getElementsByClassName("konkurenci")[0];
       var konk2=document.getElementsByClassName("konkurenci")[1];
