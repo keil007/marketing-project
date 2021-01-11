@@ -10,7 +10,7 @@
 /* font-family: 'DM Mono', monospace;
 font-family: 'Amatic SC', cursive;
 font-family: 'Neuton', serif;
-font-family: 'Pacifico', cursive; 
+font-family: 'Pacifico', cursive;
 
 #content
 {
@@ -379,7 +379,7 @@ body
 	height: 0;
 	border-left: 50vw solid transparent;
 	border-right: 50vw solid transparent;
-	border-top: 50vh solid #000;
+    border-top: 50vh solid #000;
     position: absolute;
     transition: all 0.2s linear;
 }
@@ -650,7 +650,7 @@ body
 #nine
 {
     width:100vw;
-    height:490vh;
+    height:485vh;
     background-color:#e1c076;
     background-size: 100vw;
     position: relative;
@@ -706,7 +706,7 @@ body
     left:50vw;
     top:220vh;
     padding: 0;
-    height: 150vh;
+    height: 145vh;
 }
 
 .textnine
@@ -779,7 +779,7 @@ body
 
 #wciecie3
 {
-    top:370vh;
+    top:365vh;
     height:120vh;
 }
 
@@ -1106,36 +1106,73 @@ body
 {
     background-color: #222;
     position: relative;
-    height:200vh;
+    height:400vh;
 }
 
-#fourteen-head
-{
-    position: absolute;
-    width:40vw;
-    height:15vh;
-    background-color: red;
+#fourteen-header{
+    width:100vw;
+    height: 50vh;
+    font-family: 'Amatic SC', cursive;
+    color:#e1c076;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.goal
-{
-    position: absolute;
+#fourteen-headline{
+    font-size: 180px;
+}
+
+#fourteen-paragraph{
+    font-size: 50px;
+}
+
+.fourteen-block{
+    width:100vw;
+    border:3px solid #222;
+    height: 45vh;
+    display: flex;
+    font-size: 36px;
+    font-family: 'Neuton', serif;
+}
+
+.fourteen-block-left{
+    background-color: #e1c076;
     width:30vw;
-    height:20vh;
-    background-color: #555;
-    border:3px solid green;
+    height:45vh;
+    border-top:1px #e1c076 solid;
+    color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
 }
 
-.check
-{
-    position: absolute;
-    width:10vw;
-    height:20vh;
-    background-color: #333;
-    border:3px solid green;
-    color:green;
-    font-size:100px;
-    text-align:center;
+.fourteen-block-right{
+    background-color: #222;
+    width:70vw;
+    height:45vh;
+    border-top:1px #e1c076 solid;
+    color:#e1c076;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+#fourteen-container :nth-child(2n) :nth-child(2){
+    background-color: #e1c076;
+    width:30vw;
+    height:45vh;
+    color:#000;
+}
+
+#fourteen-container :nth-child(2n) :nth-child(1){
+    background-color: #222;
+    width:70vw;
+    height:45vh;
+    color:#e1c076;
 }
 
 /* -------------------------------------------------------------------------------------------------- FIFTEEN --------------------------------------------------------------------------------------------------*/
