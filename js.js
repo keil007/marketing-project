@@ -310,19 +310,19 @@ $("#seven-picture2").mouseleave(function(){
 // ------------------------------------------------------------------------------------------------------  ELEVEN  -------------------------------------------------------------------------------------------------
 
       $("#eleven").mouseover(function(){
-              $("#eleventext").fadeIn(1200);
+              $("#eleventext").css("opacity","1");
             });
 
 // ------------------------------------------------------------------------------------------------------  TWELVE  -------------------------------------------------------------------------------------------------
 
             function twelve(){
-              document.getElementById("twelveright").style.top="3vh";
+              document.getElementById("twelveright").style.top="20vh";
               document.getElementById("twelveright").style.opacity="1";
               document.getElementById("twelveright").style.transform="rotate(-5deg)";
       }
 
       $("#twelve").mouseover(function(){
-              document.getElementById("twelveleft").style.top="3vh";
+              document.getElementById("twelveleft").style.top="20vh";
               document.getElementById("twelveleft").style.opacity="1";
               document.getElementById("twelveleft").style.transform="rotate(10deg)";
               setTimeout(twelve, 550);

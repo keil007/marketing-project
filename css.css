@@ -328,39 +328,101 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     text-align: center;
-    height: 105vh;
+    height: 110vh;
 }
 
-#sixtop
+#six-logo
 {
-    background-color: #222;
-    margin: 7vh 0;
-    width:25vw;
-    font-size: 50px;
-    color: #e1c076;
-    border-radius: 6%;
-    box-shadow:5px 0px 10px #e1c076, -5px 0px 10px #e1c076,0px 5px 10px #e1c076,0px -5px 10px #e1c076;
-}
-
-/* Niech wypływają z boku. Fajnei żeby tekst i zdjęcia były osobno w stosunku do siebie. Mogę zmienić tło na białe, żeby się abrdizej zgryeało*/
-
-#sixbottom
-{
-    background-color: transparent;
-    font-family: 'DM Mono', monospace;
-    letter-spacing: -2px;
-    font-size: 22px;
-    color: #e1c076;
-    text-shadow: 2px 0 0 #444, -2px 0 0 #444, 0 2px 0 #444, 0 -2px 0 #444, 1px 1px #444, -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444;
-    margin-bottom: 2vh;
-}
-
-#six img
-{
-    width:15vw;
+    width:30vh;
     height:auto;
+    filter: blur(5px);
+    padding-top:30vh;
+}
+
+.six-container{
+    width:100vw;
+    height:60vh;
+    overflow:hidden;
+}
+
+.middle{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.six-slider{
+    width:500%;
+    height:100%;
+    display: flex;
+}
+
+.six-nav{
+    position: absolute;
+    bottom:100px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width:50px;
+    height:10px;
+    border:2px solid #e1c076;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background-color: #e1c076;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.six-slide{
+    width:20%;
+    transition: 1s ease-in-out;
+}
+
+.six-slide img{
+    width:65%;
+    height:55%;
+    border:5px solid #e1c076;
+    border-radius:5%;
+}
+
+#r1:checked ~ .s1{
+    margin-left:0;
+}
+
+#r2:checked ~ .s1{
+    margin-left:-20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left:-40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left:-60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left:-80%;
+}
+
+.six-slide p{
+    color:#e1c076;
+    font-size: 34px;
+    padding-top: 30px;
+    text-align: center;font-family: 'Neuton', serif;
 }
 
 /* ----------------------------------------------------------------------------------------------------- SEVEN -----------------------------------------------------------------------------------------------------*/
@@ -938,17 +1000,33 @@ body
     font-size:3rem;
     text-align:center;
     font-family: 'Neuton', serif;
-    padding:55vh 20vw 27vh;
+    padding:58vh 20vw 27vh;
+    color:#d7dbe0;
 }
 
-#eleventext
-{
-    display: none;
-    opacity: 0.8;
+#eleventext{
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
 }
 
-mark{
-    background-color:#e1c076;
+#eleventext::before{
+    content:'';
+    width:95%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:15px;
+    border-top:1px solid #d7dbe0;
+}
+
+#eleventext::after{
+    content:'';
+    width:56%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:25px;
+    border-bottom:1px solid #d7dbe0;
 }
 
 /* ---------------------------------------------------------------------------------------------------- TWELVE ----------------------------------------------------------------------------------------------------*/
@@ -973,7 +1051,7 @@ mark{
     transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
     transform: rotate(40deg);
     opacity:0;
-    top:30vh;
+    top:50vh;
 }
 
 #twelvetext{
@@ -991,10 +1069,9 @@ mark{
     left:47vw;
     padding-left:5vw;
     transform: rotate(-50deg);
-
     transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
     opacity:0;
-    top:30vh;
+    top:50vh;
 }
 
 #twelveright table{
