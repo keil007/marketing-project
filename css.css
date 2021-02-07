@@ -10,8 +10,8 @@
 /* font-family: 'DM Mono', monospace;
 font-family: 'Amatic SC', cursive;
 font-family: 'Neuton', serif;
-font-family: 'Pacifico', cursive;
-
+font-family: 'Pacifico', cursive;*/
+/*
 #content
 {
     position:relative;
@@ -343,6 +343,8 @@ body
     border-radius: 6%;
     box-shadow:5px 0px 10px #e1c076, -5px 0px 10px #e1c076,0px 5px 10px #e1c076,0px -5px 10px #e1c076;
 }
+
+/* Niech wypływają z boku. Fajnei żeby tekst i zdjęcia były osobno w stosunku do siebie. Mogę zmienić tło na białe, żeby się abrdizej zgryeało*/
 
 #sixbottom
 {
@@ -930,28 +932,30 @@ body
 
 #eleven
 {
-    background-image:linear-gradient( #fff,#e1c076);
+    background-image:url('img/elevn.jpg');
+    background-size: cover;
     position: relative;
-    color:#222222;
-    font-size:6.2rem;
+    font-size:3rem;
     text-align:center;
-    font-family: 'Amatic SC', cursive;
-    padding:27vh 10vw 27vh;
-    text-shadow:8px 8px 15px #222;
+    font-family: 'Neuton', serif;
+    padding:55vh 20vw 27vh;
 }
 
-#eleven span
+#eleventext
 {
     display: none;
+    opacity: 0.8;
 }
 
-    /*color:#7697e1; ************************************************************************************************/
+mark{
+    background-color:#e1c076;
+}
 
 /* ---------------------------------------------------------------------------------------------------- TWELVE ----------------------------------------------------------------------------------------------------*/
 
 #twelve
 {
-    background-color:#e1c076;
+    background-image:linear-gradient( #e1c076,#eee);
     position: relative;
 }
 
@@ -1026,78 +1030,74 @@ body
 
 #thirteen
 {
-    background-image:linear-gradient(to right, #fff, #ccc,#7697e1,#333,#000);
-    height:150vh;
+    height:110vh;
+    background: conic-gradient(from 30deg, #fff,#fff,#e1c076,#e1c076,#e1c076,#7697e1,#7697e1,#fff);
 }
 
-.content
-{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+#thirteen img{
+    width:80px;
+    height:auto;
 }
 
 #thirteen h1
 {
-    font-size:6rem;
-    line-height: 7rem;
-    margin:0px 20px;
-    text-align:center;
-    font-family: 'Amatic SC', cursive;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-size:2.8rem;
 }
 
 #thirteen p
 {
-    margin:60px 30px;
-    font-size:3rem;
-    font-family: 'DM Mono', monospace;
-    text-align:center;
+    font-size:1.8rem;
+    text-indent: 20px;
 }
 
 #piechart
 {
-    height: 30vw;
+    height:30vw;
+    width:50vw;
     position: absolute;
-    top:-288px;
-    left:calc(50vw - 200px);
+    top:calc(50vh - 15vw);
+    left:calc(50vw - 480px);
     z-index: 10;
+}
+
+.thirteen-block{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding:5px 15px;
+    justify-content: center;
+    flex-direction: column;
+    height:40vh;
+    width:30vw;
+    color:#222;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-family: 'DM Mono', monospace;
+}
+
+.thirteen-block:hover{
+    margin-top: -1vw;
 }
 
 #thirteen-left
 {
-    top:25vh;
     position: absolute;
-    height:95vh;
-    width:33vw;
-    color:#000;
+    top:5vh;
+    left:5vw;
 }
 
 #thirteen-middle
 {
-    height:95vh;
-    left:33vw;
-    width:33vw;
+    left:35vw;
     position: absolute;
-    top:25vh;
-}
-
-#thirteen-middle p
-{
-    background: -webkit-linear-gradient(left, #000,#000,#fff,#fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    top:70vh;
 }
 
 #thirteen-right
 {
-    height:95vh;
-    left:66vw;
-    width:33vw;
+    right:5vw;
+    top:5vh;
     position: absolute;
-    top:25vh;
-    color:#fff;
 }
 
 /* -------------------------------------------------------------------------------------------------- FOURTEEN --------------------------------------------------------------------------------------------------*/
@@ -1106,7 +1106,7 @@ body
 {
     background-color: #222;
     position: relative;
-    height:400vh;
+    height:410vh;
 }
 
 #fourteen-header{
@@ -1142,7 +1142,7 @@ body
     width:30vw;
     height:45vh;
     border-top:1px #e1c076 solid;
-    color:#000;
+    color:#222;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1165,7 +1165,7 @@ body
     background-color: #e1c076;
     width:30vw;
     height:45vh;
-    color:#000;
+    color:#222;
 }
 
 #fourteen-container :nth-child(2n) :nth-child(1){
@@ -1181,6 +1181,7 @@ body
 {
     background-color: seagreen;
     position: relative;
+    height: 110vh;
 }
 
 #donut
@@ -1192,21 +1193,6 @@ body
     position: absolute;
     transition: transform 1s linear;
     animation: rotacja 7s linear 0s infinite;
-}
-
-#konkurencja
-{
-    position: absolute;
-    text-overflow: clip;
-    line-height: 40px;
-    width:5vw;
-    height:60vw;
-    left:5vw;
-    top:18vh;
-    font-size:48px;
-    font-family: 'Neuton', serif;
-    color:#222;
-    text-shadow: 1px 1px 1px #e1c076;
 }
 
 .konkurenci
@@ -1284,13 +1270,45 @@ body
     100% {transform:rotate(360deg);}
   }
 
-  
 @keyframes rotacjaodwrotna {
     0%   {transform:rotate(0deg);}
     100% {transform:rotate(-360deg);}
   }
 
+  /* -------------------------------------------------------------------------------------------------- SIXTEEN --------------------------------------------------------------------------------------------------*/
+
 #sixteen
-{  
-    background-color:#f19e38;
+{
+    background-color:#222;
+    width:100vw;
+    height:300vh;
+}
+
+#sixteen-header{
+    border: 1px solid #e1c076;
+    margin:50px auto;
+    text-align: right;
+    height: 20vh;
+}
+
+#sixteen-container{
+    width:70vw;
+    height:300vh;
+    background-color: #222;
+    margin:auto;
+    -webkit-box-shadow: 3px 3px 4px #e1c076, -3px -3px 4px #e1c076;
+    box-shadow: 3px 3px 4px #e1c076, -3px -3px 4px #e1c076;
+}
+
+.sixteen-text{
+    width:50vw;
+    height:20vh;
+    margin:20px auto;
+    color: #e1c076;
+    font-size: 24px;
+}
+
+.sixteen-text::before{
+    content: '01';
+    left:-100px;
 }
