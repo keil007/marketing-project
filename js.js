@@ -273,6 +273,20 @@ $("#seven-picture2").mouseleave(function(){
               document.getElementsByClassName("nineshow")[4].style.opacity="0";
       }
 
+
+      $('.ninehover11').on('click', function() {
+      $(this).toggleClass("ninetoggle");});
+
+      $('.ninehover12').on('click', function() {
+        $(this).toggleClass("ninetoggle");});
+
+      $('.ninehover13').on('click', function() {
+        $(this).toggleClass("ninetoggle");});
+
+      $('.ninehover14').on('click', function() {
+        $(this).toggleClass("ninetoggle");});
+
+
 // -------------------------------------------------------------------------------------------------------  TEN  --------------------------------------------------------------------------------------------------
 
       $("#ten3").mouseenter(function(){
