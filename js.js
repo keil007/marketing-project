@@ -50,6 +50,44 @@ $("#four").mouseover(function(){
         $("#fourtext").fadeIn(2000);
       });
 
+
+// -------------------------------------------------------------------------------------------------------  SIX  --------------------------------------------------------------------------------------------------
+
+
+      $('.six-slide-1').on('click', function() {
+        $('.s2').css("margin-left","0");
+        $("#r1").prop( "checked", true );
+        $("#r2").prop( "checked", false );
+});
+
+$('.six-slide-2').on('click', function() {
+  $('.s2').css("margin-left","-20%");
+  $("#r2").prop( "checked", true );
+  $("#r1").prop( "checked", false );
+  $("#r3").prop( "checked", false );
+});
+
+$('.six-slide-3').on('click', function() {
+  $('.s2').css("margin-left","-40%");
+  $("#r3").prop( "checked", true );
+  $("#r4").prop( "checked", false );
+  $("#r2").prop( "checked", false );
+});
+
+$('.six-slide-4').on('click', function() {
+  $('.s2').css("margin-left","-60%");
+  $("#r4").prop( "checked", true );
+  $("#r5").prop( "checked", false );
+  $("#r3").prop( "checked", false );
+});
+
+$('.six-slide-5').on('click', function() {
+  $('.s2').css("margin-left","-80%");
+  $("#r5").prop( "checked", true );
+  $("#r4").prop( "checked", false );
+});
+
+
 // ------------------------------------------------------------------------------------------------------  SEVEN  --------------------------------------------------------------------------------------------------
 
 $(".seven-content-1").mouseenter(function(){
@@ -372,6 +410,58 @@ $("#seven-picture2").mouseleave(function(){
 
               chart.draw(data, options);
             }
+
+// -----------------------------------------------------------------------------------------------------  FIFTEEN  ------------------------------------------------------------------------------------------------
+
+/*
+$("##################").mouseenter(function(){
+        $(this).css("top","5vh");
+        $("##########").css("top","-5vh");
+        $(this).css("left","22vw");
+        $("#################").css("left","2vw");
+});
+
+
+$('#buttonik').on('click', function() {
+        const images = $('#two').position().top;
+
+        $('html, body').animate(
+          {
+            scrollTop: images
+          },
+          1100
+        );
+      });
+
+$('#BackToTop').on('click', function() {
+        const toptop = $('#one').position().top;
+
+        $('html, body').animate(
+          {
+            scrollTop: toptop
+          },
+          1100
+        );
+      });*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // -----------------------------------------------------------------------------------------------------  FIFTEEN  ------------------------------------------------------------------------------------------------
 /*

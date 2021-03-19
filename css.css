@@ -57,7 +57,7 @@ body
 #one
 {
     background-color:#e1c076;
-    height:1700px;
+    height:650px;
     position: relative;
 }
 
@@ -135,15 +135,14 @@ body
 
 #listone
 {
-    padding-left:170px;
-    font-size:9.0rem;
+    padding-left:50px;
+    font-size:2.5rem;
     padding-top:60px;
     list-style-type: none;
     display:none;
     font-family: 'Amatic SC', cursive;
     letter-spacing: 0.8rem;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    line-height: 11rem;
 }
 
 #listone li
@@ -173,10 +172,50 @@ body
     width:5vw;
     height:5vw;
     left:47.5vw;
-    top:1600px;
-    font-size:2.5rem;
+    bottom:0;
+    font-size:1rem;
     text-align:center;
     border-radius:50%;
+}
+
+@media (min-width: 800px)
+{
+    #listone{
+        font-size:5.0rem;
+        padding-left:70px;
+        line-height: 6.5rem;
+    }
+    #buttonik{
+        font-size:2.5rem;
+    }
+    #one{
+        height:1100px;
+    }
+}
+
+@media (min-width: 1300px) {
+    #listone{
+        font-size:7.0rem;
+        padding-left:120px;
+        line-height: 9rem;
+    }
+    #buttonik{
+        font-size:3.5rem;
+    }
+    #one{
+        height:1500px;
+    }
+}
+
+@media (min-width: 1500px){
+    #listone{
+        font-size:9.0rem;
+        padding-left:170px;
+        line-height: 11rem;
+    }
+    #one{
+        height:1850px;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------ TWO ------------------------------------------------------------------------------------------------------*/
@@ -199,7 +238,18 @@ body
 }/* font-family: 'DM Mono', monospace;
 font-family: 'Amatic SC', cursive;
 font-family: 'Neuton', serif;
-font-family: 'Pacifico', cursive;*/
+font-family: 'Pacifico', cursive;
+
+
+
+font-family: 'Baloo Thambi 2', cursive;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+#0d3350
+
+*/
 
 #two img{
     width:30vw;
@@ -337,7 +387,7 @@ font-family: 'Pacifico', cursive;*/
 
 #six
 {
-    background-color: #222;
+    background-image:url('img/six-background3.png');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,6 +479,14 @@ input[name="r"]{
 
 #r5:checked ~ .s1{
     margin-left:-80%;
+}
+
+#r1:checked ~ .six-nav label:nth-child(1),
+#r2:checked ~ .six-nav label:nth-child(2),
+#r3:checked ~ .six-nav label:nth-child(3),
+#r4:checked ~ .six-nav label:nth-child(4),
+#r5:checked ~ .six-nav label:nth-child(5) {
+   background: #e1c076;
 }
 
 .six-slide p{
@@ -923,7 +981,7 @@ input[name="r"]{
 }
 
 #ten3
-{   
+{
     width:33vw;
     height:100%;
     background-color: #222;
@@ -1409,7 +1467,6 @@ input[name="r"]{
 
 #sixteen-header{
     border: 1px solid #e1c076;
-    margin:50px auto;
     text-align: right;
     height: 20vh;
 }
