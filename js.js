@@ -20,6 +20,17 @@ function begone()
         },6000);
 }
 
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+
 // -----------------------------------------------------------------------------------------------------  SCROLL  ------------------------------------------------------------------------------------------------
 
 $('#buttonik').on('click', function() {
@@ -34,6 +45,9 @@ $('#buttonik').on('click', function() {
       });
 
 $('#BackToTop').on('click', function() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    $('#BackToTop').css("display","none");
+}
         const toptop = $('#one').position().top;
 
         $('html, body').animate(

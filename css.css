@@ -29,11 +29,18 @@ font-family: 'Pacifico', cursive;*/
     display: flex;
 }*/
 
+html, body {
+    overflow-x: hidden;
+}
+
 body
 {
     margin:0;
     font-family: 'DM Mono', monospace;
-    overflow-x: hidden;
+    width:100vw;
+    top:0;
+    left:0;
+    position: relative;
 }
 
 #content
@@ -57,7 +64,7 @@ body
 #one
 {
     background-color:#e1c076;
-    height:650px;
+    height:680px;
     position: relative;
 }
 
@@ -150,12 +157,6 @@ body
     transition: all 0.5s ease-in-out;
 }
 
-#listone li:hover
-{
-    transform: scale(1.15);
-    text-shadow:8px 8px 10px #000, 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-}
-
 #toplogo
 {
     display: none;
@@ -178,7 +179,7 @@ body
     border-radius:50%;
 }
 
-@media (min-width: 800px)
+@media (min-width: 824px)
 {
     #listone{
         font-size:5.0rem;
@@ -190,6 +191,11 @@ body
     }
     #one{
         height:1100px;
+    }
+    #listone li:hover
+    {
+        transform: scale(1.1);
+        text-shadow:8px 8px 10px #000, 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     }
 }
 
@@ -204,6 +210,11 @@ body
     }
     #one{
         height:1500px;
+    }
+    #listone li:hover
+    {
+        transform: scale(1.15);
+        text-shadow:8px 8px 10px #000, 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     }
 }
 
@@ -341,46 +352,115 @@ font-family: 'Roboto', sans-serif;
 {
     background-image: url("img/budynek.jpg");
     background-repeat: no-repeat;
+    background-position-x:35%;
     background-size: cover;
 }
 
 #fourtext
 {
     position: absolute;
-    left:45vw;
-    width:50vw;
-    padding-top:270px;
-    padding-right:20px;
-    letter-spacing:0.3rem;
-    line-height: 7rem;
+    width:100vw;
+    padding-top:50px;
+    padding-right:25px;
+    padding-left:25px;
     font-family: 'Amatic SC', cursive;
-    font-size:5rem;
+    font-size:3rem;
     text-align:center;
-    display: none;
     color:#222;
 }
 
 #fourtext span
 {
     font-family: 'Pacifico', cursive;
-    font-size:3.5rem;
+    font-size:2.5rem;
     color: #e1c076;
     letter-spacing: 0.1rem;
     text-shadow: 1px 1px 1px #222;
     padding:0px 11px 0px 2px;
 }
 
+@media (min-width: 824px){
+    #fourtext
+    {
+        letter-spacing:0.2rem;
+        line-height: 4.5rem;
+        font-size:4rem;
+        width:50vw;
+        padding-top:270px;
+        padding-left:0;
+        right:5vw;
+    }
+    #fourtext span
+    {
+        font-size:3rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    #fourtext
+    {
+        display: none;
+        letter-spacing:0.2rem;
+        line-height: 5rem;
+        font-size:4rem;
+        width:50vw;
+        padding-top:270px;
+        padding-left:0;
+    }
+    #fourtext span
+    {
+        font-size:3rem;
+    }
+}
+
+@media (min-width: 1500px){
+    #fourtext
+    {
+        letter-spacing:0.3rem;
+        line-height: 7rem;
+        font-size:5rem;
+    }
+    #fourtext span
+    {
+        font-size:3.5rem;
+    }
+    #four
+    {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 /* ----------------------------------------------------------------------------------------------------- FIVE -----------------------------------------------------------------------------------------------------*/
 
 #five
 {
-    height: 100vh;
+    height: 70vh;
 }
 
 .item img
 {
     width:100vw;
-    height:110vh !important;
+    height:70vh !important;
+}
+
+.carousel-inner h3{font-size:1.8rem;}
+
+.carousel-inner p{font-size:1.4rem;padding-bottom: 20px;}
+
+@media (min-width: 824px){
+    .carousel-inner h3{font-size:2.4rem;}
+    .carousel-inner p{font-size:1.8rem;padding-bottom: 80px;}
+    #five {height: 100vh;}
+    .item img{height:110vh !important;}
+}
+
+@media (min-width: 1300px) {
+    .carousel-inner h3{font-size:3.4rem;}
+    .carousel-inner p{font-size:2.2rem;}
+}
+
+@media (min-width: 1500px){
 }
 
 /* ------------------------------------------------------------------------------------------------------ SIX ------------------------------------------------------------------------------------------------------*/
@@ -394,6 +474,7 @@ font-family: 'Roboto', sans-serif;
     justify-content: flex-start;
     text-align: center;
     height: 110vh;
+    overflow: hidden;
 }
 
 #six-logo
