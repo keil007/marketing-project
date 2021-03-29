@@ -20,17 +20,6 @@ function begone()
         },6000);
 }
 
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-
 // -----------------------------------------------------------------------------------------------------  SCROLL  ------------------------------------------------------------------------------------------------
 
 $('#buttonik').on('click', function() {
@@ -44,19 +33,27 @@ $('#buttonik').on('click', function() {
         );
       });
 
-$('#BackToTop').on('click', function() {
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    $('#BackToTop').css("display","none");
-}
-        const toptop = $('#one').position().top;
 
-        $('html, body').animate(
-          {
-            scrollTop: toptop
-          },
-          1100
-        );
-      });
+$(document).ready(function()
+{
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
+        {
+                $('#BackToTop').css("display","none");
+        }
+        else
+        {
+                $('#BackToTop').on('click', function(){
+                        const toptop = $('#one').position().top;
+
+                        $('html, body').animate(
+                        {
+                        scrollTop: toptop
+                        },
+                        1100
+                        );
+                })
+        }
+});
 
 // -------------------------------------------------------------------------------------------------------  FOUR  --------------------------------------------------------------------------------------------------
 
@@ -64,6 +61,34 @@ $("#four").mouseover(function(){
         $("#fourtext").fadeIn(2000);
       });
 
+// -------------------------------------------------------------------------------------------------------  FIVE  --------------------------------------------------------------------------------------------------
+
+      $( document ).ready(function() {
+
+        $(".carousel").carousel({
+            interval: false,
+            pause: true
+        });
+
+        $( ".carousel .carousel-inner" ).swipe( {
+        swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
+            this.parent( ).carousel( 'next' );
+        },
+        swipeRight: function ( ) {
+            this.parent( ).carousel( 'prev' );
+        },
+        threshold: 0,
+        tap: function(event, target) {
+            window.location = $(this).find('.carousel-item.active a').attr('href');
+        },
+        excludedElements:"label, button, input, select, textarea, .noSwipe"
+        } );
+
+        $('.carousel .carousel-inner').on('dragstart', 'a', function () {
+            return false;
+        });
+
+    });
 
 // -------------------------------------------------------------------------------------------------------  SIX  --------------------------------------------------------------------------------------------------
 
@@ -100,8 +125,34 @@ $('.six-slide-5').on('click', function() {
   $("#r5").prop( "checked", true );
   $("#r4").prop( "checked", false );
 });
+/*
+$( document ).ready(function() {
 
+        $(".sixteen-container").carousel({
+            interval: false,
+            pause: true
+        });
 
+        $( ".sixteen-container .six-slider" ).swipe( {
+        swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
+            this.parent( ).carousel( 'next' );
+        },
+        swipeRight: function ( ) {
+            this.parent( ).carousel( 'prev' );
+        },
+        threshold: 0,
+        tap: function(event, target) {
+            window.location = $(this).find('.six-slider a').attr('href');
+        },
+        excludedElements:"label, button, input, select, textarea, .noSwipe"
+        } );
+
+        $('.sixteen-container .six-slider').on('dragstart', 'a', function () {
+            return false;
+        });
+
+    });
+*/
 // ------------------------------------------------------------------------------------------------------  SEVEN  --------------------------------------------------------------------------------------------------
 
 $(".seven-content-1").mouseenter(function(){
@@ -375,24 +426,34 @@ $("#seven-picture2").mouseleave(function(){
 
 // ------------------------------------------------------------------------------------------------------  ELEVEN  -------------------------------------------------------------------------------------------------
 
-      $("#eleven").mouseover(function(){
-              $("#eleventext").css("opacity","1");
+            $(document).ready(function()
+            {
+                    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
+                    {
+                            $('#eleventext').css("opacity","1");
+                    }
+                    else
+                    {
+                        $("#eleven").mouseover(function(){
+                                $("#eleventext").css("opacity","1");
+                              });
+                    }
             });
 
 // ------------------------------------------------------------------------------------------------------  TWELVE  -------------------------------------------------------------------------------------------------
 
-            function twelve(){
-              document.getElementById("twelveright").style.top="20vh";
-              document.getElementById("twelveright").style.opacity="1";
-              document.getElementById("twelveright").style.transform="rotate(-5deg)";
-      }
+function twelve(){
+        document.getElementById("twelveright").style.top="20vh";
+        document.getElementById("twelveright").style.opacity="1";
+        document.getElementById("twelveright").style.transform="rotate(-5deg)";
+}
 
-      $("#twelve").mouseover(function(){
-              document.getElementById("twelveleft").style.top="20vh";
-              document.getElementById("twelveleft").style.opacity="1";
-              document.getElementById("twelveleft").style.transform="rotate(10deg)";
-              setTimeout(twelve, 550);
-            });
+$("#twelve").mouseover(function(){
+        document.getElementById("twelveleft").style.top="20vh";
+        document.getElementById("twelveleft").style.opacity="1";
+        document.getElementById("twelveleft").style.transform="rotate(10deg)";
+        setTimeout(twelve, 550);
+      });
 
 // ----------------------------------------------------------------------------------------------------  THIRTEEN  -----------------------------------------------------------------------------------------------
 

@@ -521,10 +521,6 @@ font-family: 'Roboto', sans-serif;
     transition: 0.4s;
 }
 
-.bar:hover{
-    background-color: #e1c076;
-}
-
 input[name="r"]{
     position: absolute;
     visibility: hidden;
@@ -575,6 +571,30 @@ input[name="r"]{
     font-size: 34px;
     padding-top: 30px;
     text-align: center;font-family: 'Neuton', serif;
+}
+
+@media (min-width: 824px){
+    .bar:hover{
+        background-color: #e1c076;
+    }
+}
+
+
+@media (max-width: 824px) and (orientation:landscape) {
+#six{
+    height: 110vh;}
+
+    .six-slide img{
+        width:45%;
+        height:45%;
+    }
+
+    .six-slide p{
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
 }
 
 /* ----------------------------------------------------------------------------------------------------- SEVEN -----------------------------------------------------------------------------------------------------*/
@@ -1114,11 +1134,6 @@ input[name="r"]{
     top:calc(10.5vh - 42.5px);
 }
 
-.block:hover
-{
-    transform: scale(1.08);
-}
-
 #ten h1
 {
     font-family: 'Neuton', serif;
@@ -1160,6 +1175,7 @@ input[name="r"]{
     box-shadow: 3px 3px 22px #222, -3px -3px 22px #222, -3px 3px 22px #222, 3px -3px 22px #222;
     background-color: #e1c076;
 }
+
 .circle img
 {
     border-radius: 50%;
@@ -1172,9 +1188,55 @@ input[name="r"]{
 
 .circle span
 {
-    font-size:120px;
+    display: inline-block;
+    font-size:50px;
 }
 
+/*
+
+.circle img
+{
+    border-radius: 50%;
+    top:0vh;
+    left:0vw;
+    width:10vw;
+    height:10vw;
+    position: absolute;
+}
+
+.circle span
+{
+    display: inline-block;
+    font-size:50px;
+    top:0;
+    left:calc(-50% + 10px);
+    z-index: 5;
+    position: absolute;
+}*/
+
+@media (min-width: 824px)
+{
+    .block:hover
+    {
+        transform: scale(1.08);
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .circle span
+    {
+        font-size:100px;
+    }
+}
+
+@media (min-width: 1500px){
+
+    .circle span
+    {
+        font-size:120px;
+    }
+}
 /* ---------------------------------------------------------------------------------------------------- ELEVEN ----------------------------------------------------------------------------------------------------*/
 
 #eleven
@@ -1182,10 +1244,10 @@ input[name="r"]{
     background-image:url('img/elevn.jpg');
     background-size: cover;
     position: relative;
-    font-size:3rem;
+    font-size:1.8rem;
     text-align:center;
     font-family: 'Neuton', serif;
-    padding:58vh 20vw 27vh;
+    padding:50vh 5vw 27vh;
     color:#d7dbe0;
 }
 
@@ -1214,6 +1276,27 @@ input[name="r"]{
     border-bottom:1px solid #d7dbe0;
 }
 
+@media (min-width: 824px)
+{
+
+    #eleven
+    {
+        font-size:2.4rem;
+        padding:58vh 20vw 27vh;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    #eleven
+    {
+        font-size:3rem;
+        padding:58vh 20vw 27vh;
+    }
+
+}
+
 /* ---------------------------------------------------------------------------------------------------- TWELVE ----------------------------------------------------------------------------------------------------*/
 
 #twelve
@@ -1229,22 +1312,17 @@ input[name="r"]{
     position: absolute;
     font-family: 'DM Mono', monospace;
     padding: 17vh 5vw 30vh;
-    font-size:1.6rem;
+    font-size:1rem;
     text-align:center;
     color:#000;
-
-    transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
-    transform: rotate(40deg);
     opacity:0;
     top:50vh;
+    transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
+    transform: rotate(40deg);
 }
 
 #twelvetext{
     transition: 0.6s all ease-in-out;
-}
-
-#twelvetext:hover{
-    transform: scale(1.15,1.15);
 }
 
 #twelveright
@@ -1253,18 +1331,14 @@ input[name="r"]{
     position: absolute;
     left:47vw;
     padding-left:5vw;
-    transform: rotate(-50deg);
-    transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
     opacity:0;
     top:50vh;
+    transform: rotate(-50deg);
+    transition: top 0.8s, transform 0.8s, opacity 1.2s ease-in-out;
 }
 
 #twelveright table{
     transition: 0.6s all ease-in-out;
-}
-
-#twelveright table:hover{
-    transform:rotate(10deg);
 }
 
 
@@ -1275,17 +1349,60 @@ input[name="r"]{
 
 #twelveright th
 {
-    font-size:1.6rem;
+    font-size:1rem;
     text-align:center;
     background-color: #222;
     color:#e1c076;
     border: 4px solid #222;
 }
 
-#twelveright tr:hover {
-    background-color: #222;
-    color:#e1c076;
-    border: 4px dashed #e1c076;
+@media (min-width: 824px)
+{
+
+    #twelveleft
+    {
+        width:50vw;
+        height:90vh;
+        padding: 17vh 5vw 30vh;
+        font-size:1.2rem;
+        top:50vh;
+    }
+
+    #twelveright th
+    {
+        font-size:1.2rem;
+    }
+
+    #twelvetext:hover{
+        transform: scale(1.15,1.15);
+    }
+
+    #twelveright table:hover{
+        transform:rotate(10deg);
+    }
+
+    #twelveright tr:hover {
+        background-color: #222;
+        color:#e1c076;
+        border: 4px dashed #e1c076;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    #twelveleft
+    {
+        width:50vw;
+        height:90vh;
+        padding: 17vh 5vw 30vh;
+        font-size:1.6rem;
+        top:50vh;
+    }
+
+    #twelveright th
+    {
+        font-size:1.6rem;
+    }
 }
 
 /* -------------------------------------------------------------------------------------------------- THIRTEEN --------------------------------------------------------------------------------------------------*/
@@ -1303,22 +1420,22 @@ input[name="r"]{
 
 #thirteen h1
 {
-    font-size:2.8rem;
+    font-size:2rem;
 }
 
 #thirteen p
 {
-    font-size:1.8rem;
+    font-size:1rem;
     text-indent: 20px;
 }
 
 #piechart
 {
+    position: absolute;
     height:30vw;
     width:50vw;
-    position: absolute;
     top:calc(50vh - 15vw);
-    left:calc(50vw - 480px);
+    left:calc(50vw - 160px);
     z-index: 10;
 }
 
@@ -1330,36 +1447,101 @@ input[name="r"]{
     justify-content: center;
     flex-direction: column;
     height:40vh;
-    width:30vw;
+    width:50vw;
     color:#222;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
     font-family: 'DM Mono', monospace;
 }
 
-.thirteen-block:hover{
-    margin-top: -1vw;
-}
-
 #thirteen-left
 {
     position: absolute;
     top:5vh;
-    left:5vw;
+    left:1vw;
 }
 
 #thirteen-middle
 {
-    left:35vw;
+    left:25vw;
     position: absolute;
     top:70vh;
 }
 
 #thirteen-right
 {
-    right:5vw;
+    right:1vw;
     top:5vh;
     position: absolute;
+}
+
+@media (min-width: 824px)
+{
+    .thirteen-block:hover{
+        margin-top: -1vw;
+    }
+
+    #thirteen h1
+    {
+        font-size:2.2rem;
+    }
+
+    #thirteen p
+    {
+        font-size:1.4rem;
+        text-indent: 20px;
+    }
+
+    #piechart
+    {
+        height:30vw;
+        width:50vw;
+        top:calc(50vh - 15vw);
+        left:calc(50vw - 240px);
+    }
+}
+
+@media (min-width: 1300px) {
+
+    #thirteen h1
+    {
+        font-size:2.8rem;
+    }
+
+    #thirteen p
+    {
+        font-size:1.8rem;
+        text-indent: 20px;
+    }
+
+    #piechart
+    {
+        height:30vw;
+        width:50vw;
+        top:calc(50vh - 15vw);
+        left:calc(50vw - 480px);
+    }
+
+    .thirteen-block{
+        padding:5px 15px;
+        height:40vh;
+        width:30vw;
+    }
+
+    #thirteen-middle
+    {
+        left:35vw;
+    }
+
+    #thirteen-left
+    {
+        left:5vw;
+    }
+
+    #thirteen-right
+    {
+        right:5vw;
+    }
 }
 
 /* -------------------------------------------------------------------------------------------------- FOURTEEN --------------------------------------------------------------------------------------------------*/
