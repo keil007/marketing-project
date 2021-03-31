@@ -477,18 +477,18 @@ font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
 
+.six-carousel-inner{
+    width:500%;
+    height:100%;
+    display: flex;
+}
+
 #six-logo
 {
     width:30vh;
     height:auto;
     filter: blur(5px);
     padding-top:30vh;
-}
-
-.six-container{
-    width:100vw;
-    height:60vh;
-    overflow:hidden;
 }
 
 .middle{
@@ -770,8 +770,8 @@ input[name="r"]{
     background-color: #111;
     position:relative;
     color:#dddddd;
-    font-size:2.0rem;
-    line-height: 3.1rem;
+    font-size:1.4rem;
+    line-height: 1.8rem;
     font-family: 'DM Mono', monospace;
 }
 
@@ -844,7 +844,7 @@ input[name="r"]{
     position: absolute;
     width:36vw;
     height:60vh;
-    letter-spacing: 0.2rem;
+    padding-top: 50px;
 }
 
 #mocne
@@ -879,6 +879,30 @@ input[name="r"]{
     opacity:0;
     display: none;
     transition: left 1s, opacity 1.3s ease-in;
+}
+
+@media (min-width: 824px){
+
+    #eight
+    {
+        font-size:1.8rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .swottext
+    {
+        letter-spacing: 0.2rem;
+        padding-top:0px;
+    }
+
+    #eight
+    {
+        font-size:2.0rem;
+        line-height: 3.1rem;
+    }
 }
 
 /* ----------------------------------------------------------------------------------------------------- NINE -----------------------------------------------------------------------------------------------------*/
@@ -1050,6 +1074,60 @@ input[name="r"]{
 .ninetoggle
 {
     left:5vw;
+}
+
+/*
+
+@media (min-width: 824px){
+
+    #ninetop
+    {
+        font-size:4rem;
+        letter-spacing: 2px;
+    }
+
+    .textnine h1
+    {
+        font-size:3rem;
+    }
+
+    .textnine p
+    {
+        font-size:2rem;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .nineshow
+    {
+        font-size:4.8rem;
+        letter-spacing: 0.8rem;
+    }
+
+    .ninehover-back p
+    {
+        padding-top: 40px;
+        font-size: 68px;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    #ninetop
+    {
+        font-size:50px;
+        letter-spacing: 6px;
+    }
+
+    .textnine h1
+    {
+        font-size:4rem;
+    }
+
+    .textnine p
+    {
+        font-size:2.5rem;
+        padding: 0px 130px 0px 130px;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------ TEN ------------------------------------------------------------------------------------------------------*/

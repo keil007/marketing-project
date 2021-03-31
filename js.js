@@ -92,7 +92,6 @@ $("#four").mouseover(function(){
 
 // -------------------------------------------------------------------------------------------------------  SIX  --------------------------------------------------------------------------------------------------
 
-
       $('.six-slide-1').on('click', function() {
         $('.s2').css("margin-left","0");
         $("#r1").prop( "checked", true );
@@ -125,34 +124,7 @@ $('.six-slide-5').on('click', function() {
   $("#r5").prop( "checked", true );
   $("#r4").prop( "checked", false );
 });
-/*
-$( document ).ready(function() {
 
-        $(".sixteen-container").carousel({
-            interval: false,
-            pause: true
-        });
-
-        $( ".sixteen-container .six-slider" ).swipe( {
-        swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
-            this.parent( ).carousel( 'next' );
-        },
-        swipeRight: function ( ) {
-            this.parent( ).carousel( 'prev' );
-        },
-        threshold: 0,
-        tap: function(event, target) {
-            window.location = $(this).find('.six-slider a').attr('href');
-        },
-        excludedElements:"label, button, input, select, textarea, .noSwipe"
-        } );
-
-        $('.sixteen-container .six-slider').on('dragstart', 'a', function () {
-            return false;
-        });
-
-    });
-*/
 // ------------------------------------------------------------------------------------------------------  SEVEN  --------------------------------------------------------------------------------------------------
 
 $(".seven-content-1").mouseenter(function(){
@@ -216,6 +188,7 @@ $("#seven-picture2").mouseleave(function(){
 
       var x = document.getElementById("eight");
       x.addEventListener("mouseenter", myFunction);
+      $('#eight').on("swipe", myFunction);
       var abc=1;
       var pochuj=1;
 
